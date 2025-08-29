@@ -1,0 +1,638 @@
+[
+    {
+  "id": 1,
+  "title": "Guardians of the Galaxy Vol. 3",
+  "genre": ["Action", "Adventure", "Comedy"],
+  "rating": 8.2,
+  "releaseDate": "2023-05-05",
+  "duration": "150 min",
+  "poster": "https://comicbook.com/wp-content/uploads/sites/4/2023/04/03fb0cc3-e8ff-4e3c-96d5-bdc20d13fd6f.jpg",
+  "videoUrl": "https://www.youtube.com/watch?v=u3V5KDHRQvk",
+  "description": "The Guardians face new challenges and old friends as they embark on one last mission to protect one of their own.",
+  "images": [
+    "https://www.movieposters.com/cdn/shop/files/guardians-of-the-galaxy-vol-3_hhvqlixm_480x.progressive.jpg?v=1684245174",
+    "https://image.tmdb.org/t/p/original/aVHSxjXj9nM2Ax9Hps6iJGkL3i.jpg",
+    "https://image.tmdb.org/t/p/original/jYxEw4xjBLHg4hJvGzC6k1fC4E.jpg"
+  ],
+  "cast": [
+    {
+      "name": "Will Poulter",
+      "role": "Peter Quill / Star-Lord",
+    "image": " https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcROc3oMHEqt7dQq2uhPgWBVwAxbpDbv4fWeqofBtO_vax3g6KBD7X3UOpYG0OUMiHFZ8Q9sVH-Z9NeOSJTCAH5iOODUf7P9eEMH0oocG4aAG0IozYe-LpO-IziLbjdNjerAP4x-nt0FwvXR"
+     
+    },
+    {
+      "name": "Zoe Saldana",
+      "role": "Gamora",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-uDRRKEzFv4yu7F6v8q6-hfEk0GGImVYHctqt4Cah8BEaEUPriygZeHOLU9jpqb-EPgHO-AjiiLJ6_Tuqt_vGkMvc9zuyibSga2aTUkCm"
+    },
+    {
+      "name": "Dave Bautista",
+      "role": "Drax",
+      "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQkae9FvXvcb9m66tZbkw_mWpgcv49AhnNmGyAS-yYUjdPyWlVMxUfGDdKA0FkDX8wGKjz_HDYU5LMsDyH2cBvYmfH8-YZX8uPoxCZfhjbEsdFtl2MtSWbzQybtXL91caOhcACdQ9Zm2l8"
+    },
+    {
+      "name": "Bradley Cooper",
+      "role": "Rocket (voice)",
+      "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRbx15iBESsMfDcK1EDMmJkFOEXuHjMqP6MXFk3TdSFPbkzOOFtH3xScJecfkDdIEJwhYEZmNlmKxh__IqKcNMspmoEISyOsgpEzSitAdw34oEvaatFJC0e0gu6bJFPYzsatjFmMACcys3x"
+    },
+    {
+      "name": "Vin Diesel",
+      "role": "Groot (voice)",
+      "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTch1Llu7jYbBHproI-fTXShoSSq6rEioJ_rlteoEoiiMa56_3ufhfOLhUsSq4olVdqpp0X9VHE4W8wU40S0qz0jlx1rF0TmYp1Kt8g3hC7sK13d2OFCjIKreqiD_X2Tt6gw7poMMTo2VIZ"
+    },
+    {
+      "name": "Karen Gillan",
+      "role": "Nebula",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqxPHRd4BNJFhWOlQ7KFN8ltq4ghP0gUm9lZJONIm0it9n5hkhWS0U_eYbdw5dPKgnOdtBGD_IkxMQZcjWyEcP3NMcWs7r89BFqxR1Wg_J"
+    },
+    {
+      "name": "Pom Klementieff",
+      "role": "Mantis",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkIbYzcwKhkZ2FiOPMmjG9xxFDqpqhhmLpcE_ntLVr_KFfI8-GpXvAhXpHDU1c8uZFzNuMJBbNwZxG5QwbCNzJImoOLDMUTnO8Drqx57e9kg"
+    },
+    {
+      "name": "Sean Gunn",
+      "role": "Kraglin",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5dnMV5_HOpjYHZ8z1P0VIYNPmKyThcPkgtITi0Rii8HxfrljytL76sQxdPuCGBX9Dbm8l93VTMweRxpRDaywcEUgQGG7OKBHBsCx78ZqW8A"
+    },
+    {
+      "name": "Chukwudi Iwuji",
+      "role": "Stakar Ogord",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqr7HDF53P6vCcB7l-AxlmwzRDhm7AkrImTnxb650t44jHN8J25jL3Y3jHp9U3OAM1vc0p2RpCS7cqYuUGRACg5dhVZu84SlqUKhuf4aA4YQ"
+    },
+    {
+      "name": "Maria Bakalova",
+      "role": "Ayesha",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOyMobx-pTVFs3XKeuOPng2e_NBGKleA4wgY2Ts8xhtLUu1UlnwmwkgYeMHtL0xHkGkb5g2LnT4A3zOkgmbJZnNxyJF1iuD0uhTBcx6axBg"
+    }
+  ]
+},
+
+{
+  "id": 2,
+  "title": "The Dark Knight",
+  "description": "When the menace known as the Joker wreaks havoc on Gotham City, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+  "releaseYear": 2008,
+  "genre": ["Action", "Crime", "Drama"],
+  "rating": 9.0,
+  "poster": "https://irs.www.warnerbros.com/hero-banner-jpeg/movies/media/browser/the_dark_knight_banner.jpg",
+  "watchUrl": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+  "images": [
+    "https://media.posterstore.com/site_images/68631bce25436f8361d76852_1908700297_WB0037-5.jpg?auto=compress%2Cformat&fit=max&w=3840",
+    "https://image.tmdb.org/t/p/original/1hRoyzDtpgMU7Dz4JF22RANzQO7.jpg",
+    "https://image.tmdb.org/t/p/original/3jLPBLSLgbUhdpsHhXlp3dYYZ5y.jpg"
+  ],
+  "cast": [
+    { "name": "Christian Bale", "role": "Bruce Wayne / Batman", "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSxFBaqOqrap2uw-rk66TSE1atuy6-S7sVPBbhQ5ibyfNpFZhKLOj00BK8GfkU-HIe9ShhhT9LQlB82dPu8wB96mnDp06RDOyyxvenQHZ5ISYxH7egaMHTGfMDMhs0z16ifZ-h41QwwKAw" },
+    { "name": "Heath Ledger", "role": "Joker", "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQ5sYKXp8bEJJIFbGOLDmJXDPbq8WfND8bPd269oHctBxuWoR9ZzXnUCd8-VnHgEtO5oieceVV1XucPS93KLoag6XRjgRe-85_5MVt1ev5Bv1jsUSjfILxdv0g-IB8zsfPLMU2Vkv0ioRzQ" },
+    { "name": "Aaron Eckhart", "role": "Harvey Dent / Two-Face", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTguk3cO-ZH-L1YQnam0xyKdP9TURcVvpfugvlv05MdhWGmVZglM1I1SWA1Yu29pZKvZ09pHtDCkJ0VBbNxQvoICsPOxzL6wYX6ZatpHpeV" },
+    { "name": "Michael Caine", "role": "Alfred Pennyworth", "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcToPt4mUzm8oxuZzQ14XinKV9AOT8Uo1U4jQqdVsuVXLrQ-Y2OmadgdAKPTzxFumjRtWvQth-m7HVvkU0nzPTLcicFA9U3gtR302bB-fMUBts9_EjEA5g_K56mDWlptbeO-RrNfHKP9pxY" },
+    { "name": "Gary Oldman", "role": "Commissioner Gordon", "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQHmfIDdpleful__sgXwCT4H3a5T7qKpPf9SI64wgICYphd0BQQBly0GxzD1BYMEXlq_6wK2rgVKNV5GibgbghShuTmB2ff8YziV3DhXgUWVhHKiDNUh34uDKaCaK2Qxh8zcpzI1jntuokP" },
+    { "name": "Maggie Gyllenhaal", "role": "Rachel Dawes", "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSx-gZPZSf_ti7XdQkVq2pyj91XMVoOUZNNpd4h0-0lj3pISotSP7HF_0Z0c1c4hxxkUxg8LtfeHPNl0OIIhvKup8BH-rlgXmu3tUAR0k88yqo9go_ojSxaPiUKUuPrDDALB4_yZhw_2YAg" },
+    { "name": "Morgan Freeman", "role": "Lucius Fox", "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT56Rd6BxYXIXLBb3j9pg6LCmmo0rIDc6mi7U8luye68GZfzkVACG0JxFmuCn51KAw7yP-kgc7A4Eskd8WEZ66r-ZxTiXmfv6_aeyrWGQxG" },
+    { "name": "Monique Gabriela ", "role": "Anna Ramirez", "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA4wZW2Jaq_gI9GLJyT4FsY8IMmB9Rcas42z5h0uzD_jzBNkX47Tpyo9_75xsTBzUcnXdWl8cqjb4nWbC4MnmJsWSmFwdKuCRJmXpWpfbw" },
+    { "name": "Eric Roberts", "role": "Sal Maroni", "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcR3smIbjy7Z9BZ82yFhd-98i4XpNuNZ3VGZV1rgrAkuOR92JvHLWa7wgLemEsLfbkAzVXkaguSz09SjouY1W_nKgVkxw1Fsgv0g4f9TftQeilMe27Ks0EEAc0qdXKbbSFSfszNrrKl7LVGn" },
+    { "name": "Chin Han", "role": "Lau", "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSMu1mow4WrdV0saGxj5Px6aVA7doyYT3nCura1AaHNe8P8yFSwWgKzWjMa3iJU1fNm1l0xi7O5T-qUY-AVoTUeCNmBK3zbFncuozcChXJ_I0INxXu-b5UXATs8kwT4Guv6vkAE0jTugjI" },
+    { "name": "Nestor Carbonell", "role": "Mayor", "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBk9Qs6WfM04SUOMuJ2d6xGbENDJ0qP9KHKdYbgJU6Jvd90aaadK7ZM_70rhlLnaqiGPdb5AiTjkromYvmTgqei2U2dC5r0kzMlb5g6i3U" }
+  ]
+},
+
+{
+  "id": 3,
+  "title": "Interstellar",
+  "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+  "year": 2014,
+  "genre": ["Sci-Fi", "Adventure", "Drama"],
+  "rating": 8.6,
+  "duration": "2h 49m",
+  "poster": "https://i.ebayimg.com/images/g/TN4AAOSwOyhnbyr0/s-l1200.jpg",
+  "watchUrl": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+  "images": [
+    "https://mir-s3-cdn-cf.behance.net/project_modules/hd/297acd129204217.616629e21fe76.png",
+    "https://image.tmdb.org/t/p/original/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg",
+    "https://image.tmdb.org/t/p/original/8lA4Nn9V0IBfgkLrfjOY6S2tKD1.jpg"
+  ],
+  "cast": [
+    {
+      "name": "Matthew McConaughey",
+      "role": "Cooper",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDS28DgQGWwO_6VXkRLg48J_TJOaI7WJAwjD5yGowquT8BrsZO4na7i1QtprC0DvRvFPr0vNwQ7wFdUGfM6xmgadbHjney5ilRoXlT2LlGGA"
+    },
+    {
+      "name": "Anne Hathaway",
+      "role": "Brand",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjVjG9PwfL_OKL89wiEuQMRJKD1uVyu6QYslsxWoCoh3jr6pXdU8t8d6eewfUBzMzgf3Aaf-pBJCJyw6jBRSXHd6Yr2M6Xk8nNBRT8jpKPKA"
+    },
+    {
+      "name": "Jessica Chastain",
+      "role": "Murph",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVCxYKDgMDGYCB32ZdTGiybVhdwvGuYX_KBn1_NCjNGXlgh5PGRAdmGwR5ygHaqFcLF64NvY9mP3slQTk3VlhAe7sbgcc3Qjb7rHKduggx_g"
+    },
+    {
+      "name": "Michael Caine",
+      "role": "Professor Brand",
+      "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcR6Pswrp2WBPSUXgxWUKoQFrOYj-qAnjSx2NHsH6xipwPcAuYduovCNV0ojxopRLEUukAT6TNx3Nok-h3tY2KdGJgHNX3W6YoCoycClHOLikh1ceEWRIvH_ptDU7encOLai5wLoQfPxf3w"
+    },
+    {
+      "name": "Matt Damon",
+      "role": "Mann",
+      "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTN4dvf8OmBtdDgWjcIWK_it9qHWf0msSme8kFX6tFTNcAxzYKCQhBgvUi7IP2zn4gPCwzahwbWWxMja1J24qd1bFIxRwmlzDaduta_ghndnIrcfPELVSlOBsTI0CUI-8w7WfSWsMy2S4An"
+    },
+    {
+      "name": "Casey Affleck",
+      "role": "Tom",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVtAwy8F7Zw57qWQQUVRLVzQrI0cXPKIQ9SFsdG8PgC9MWTNytSKd9lUoh2our-Gl7Yk0FQfJhqJ77PUs2nl7HYOQOSXUovFctg4zd_CJhWQ"
+    },
+    {
+      "name": "Timothée Chalamet",
+      "role": "Young Tom",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDotI7xguwxK-K8abbHaluockRSN0osOU_4pUxcAr8RD4GiiOjkjyQz6Iip3ZliczRRkuHdTBPDs5suw0ItEzQCbDuhHI68qdTpAW_JSuF"
+    },
+    {
+      "name": "Ellen Burstyn",
+      "role": "Old Murph",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYu8sSfAkxJpAI-YdzsnLum-MF1Pk365dIw5JG76YSPf5h3q_pxHoNVtWpNP-I74Vsr8fTVgSzBIiIByV7YiEgS-QUYalP1-DW1-1IAlBU"
+    },
+    {
+      "name": "David Gyasi",
+      "role": "Romilly",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQP_ZabSznbpG3l65vM53a7YV8SMz_9vYtVv7IA4OEVN66IFzS_D5u2fl4qyO2IpFmUenBw58I6OIz0VFRS-WeZs6v8JbLUW-u5O5Y9CIkMGA"
+    },
+    {
+      "name": "Wes Bentley",
+      "role": "Doyle",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWMGn3aXAFPkkA-wDpMeJRcQGIVaoPrWVHIivyH8EQxv8HWwR0M_kW3Wn3rFujkTnAz5OX06UhHo5pGzLmer2Ke8XvRrrf3VbAB78a4lMT"
+    }
+  ]
+},
+{
+  "id": 4,
+  "title": "Avengers: Endgame",
+  "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins. The remaining Avengers assemble for one final mission to undo the damage caused by Thanos.",
+  "releaseYear": 2019,
+  "genre": ["Action", "Adventure", "Sci-Fi"],
+  "rating": 8.4,
+  "poster": "https://image.tmdb.org/t/p/original/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+  "watchUrl": "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+  "images": [
+    "https://image.tmdb.org/t/p/original/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+    "https://image.tmdb.org/t/p/original/6P3c80EOm7BodndGBUAJHHsHKrp.jpg",
+    "https://image.tmdb.org/t/p/original/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg"
+  ],
+  "cast": [
+    {
+      "name": "Robert Downey Jr.",
+      "role": "Tony Stark / Iron Man",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3uWUWQ8ZSREXNQy2leb4Aqg-7KcuIrzerqMAWl4lv2o23VwGVaUR4AydthOTgYn1caqZZNcMmrXb_Bo8QgNVso5DDvniWUNdL8okHrk3G"
+    },
+    {
+      "name": "Chris Evans",
+      "role": "Steve Rogers / Captain America",
+      "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTzCYEeiEbwJu44MxME_Nz9Z1XiWt0X1s79toxJoCU_AKnZ5hEJOAWDIPnXJjAcQfQd9CY2EdvnYmgD3kngBv0flf8aeVXdm0cj5l6UjQgm9AWaqvDNy0TTd0lSIlCRnlEWFSYkPl_h-aj6"
+    },
+    {
+      "name": "Chris Hemsworth",
+      "role": "Thor",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIHXEoRM7C_hROhUWBSj-S4o0BrVegE6WsCmoXmLKdo5PmIZZhGwcrmc67IkvPwcsXRkBZkDJH24-dUkdJ0ZCfk-OWSlzSbWQnHa2A0S5cLg"
+    },
+    {
+      "name": "Scarlett Johansson",
+      "role": "Natasha Romanoff / Black Widow",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvUV92L4N9fw-7hfn9wW24oQ02a2XWEBxpDuNqkx7yfyDvLt8qsDxCKn4e4JXndRG_wN5ZW97VvSv143gREwXWnUItYImRBm1sS_Utg1E5"
+    },
+    {
+      "name": "Mark Ruffalo",
+      "role": "Bruce Banner / Hulk",
+      "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRVKf7q6JnkTn6I8NOoRc7DHafp5tNY-YlO1s4HXhy8TFLh3NGXzFeVimT7wfTFZkipMghzUbT_l5m_Qr8xU0I7_DAQ1JryqQGkXeknUGR2GYjN3Mmg70eI8ElQLT0d_Xvswl9Lju12rr0"
+    },
+    {
+      "name": "Jeremy Renner",
+      "role": "Clint Barton / Hawkeye",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOWna4ZhNs20XOrB1fa-PJWfoL64_LPcjtfOy_Ucfjz1FOfJ949yDCG5dofPbenj5bHpj4CMMmBo-9MrT2k7Mx87xSW5kqSSdFQxIWv7pwxw"
+    },
+    {
+      "name": "Brie Larson",
+      "role": "Carol Danvers / Captain Marvel",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjyO1nvrh8FyKzgFDDeyg9qpq7ILrXhXc_gt6yfHPX8MbBWnDjiwIacRnD9qVYsI0XlliApNu8DeiSVgnxugsZE8H8-EadWdEG67i5dtGq"
+    },
+    {
+      "name": "Josh Brolin",
+      "role": "Thanos",
+      "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSwT2lncE8bIDYLxm6QgPTwhrspgAptD3PcHB71LYjONVZd_8KgSzpkqgfZ3YWNg4q_kI1tWugaFjJx1vvxpD_QAZxSD6IZxw7YuAMqqkLTse2UpB0RoznfYcjDlTJT_9M8a8Ilx9b9MVI"
+    },
+    {
+      "name": "Paul Rudd",
+      "role": "Scott Lang / Ant-Man",
+      "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQyZrKe7dJEAXnWGKWFz3bwC-OiTntW1KNFAB-8lMHA59NrYCtDZKSrxujdtqZIFXL8dnC_KHE1MV-snM-optvE0reJ6db89PyMRnHVev2-HvylYjM8fWEKq8IwuDujIbwIZfrTQWoop-4"
+    },
+    {
+      "name": "Don Cheadle",
+      "role": "James Rhodes / War Machine",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmovnNFDMjDp5V4tSHWKc7aclAx3K-1D7QvrbNBjZ4kjz4kktXYuPfdHuMUazOyui3SdJthJA9rBULWtMZ9HeIOnSSX5MvGaOAis-FwqPq"
+    }
+  ]
+},
+{
+  "id": 5,
+  "title": "Joker",
+  "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He embarks on a downward spiral that leads to the creation of the infamous criminal mastermind known as the Joker.",
+  "releaseYear": 2019,
+  "genre": ["Crime", "Drama", "Thriller"],
+  "rating": 8.4,
+  "poster": "https://image.tmdb.org/t/p/original/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+  "watchUrl": "https://www.youtube.com/watch?v=t433PEQGErc",
+  "images": [
+    "https://static.fabrik.io/19xo/ef1bd8eace2fba22.jpg?lossless=1&w=960&fit=max&s=11f9a216821fae7bf516293944e9d3cd",
+    "https://image.tmdb.org/t/p/original/jQYa3Gf3zG8whxAvc3hHt1Epc4.jpg"
+  ],
+  "cast": [
+    {
+      "name": "Joaquin Phoenix",
+      "role": "Arthur Fleck / Joker",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1yC1BNRvZRpI8fTJ1wl2LpUqlyJ5S9eTCeg5lErRYV67s8fveEinwP4ZFOU7CWnR5navvuJSSTBNSRrQ_5kZFThxYT5vQfrcRG8Ox89TZ"
+    },
+    {
+      "name": "Robert De Niro",
+      "role": "Murray Franklin",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScNlr_9ov-O_6LgoAazOEwOciKSMRC0HtDy3t6hMenDlCgpl8p8eljtm8g9pMQECQNtJIaH0ywioMMLeoGW-iNG4c4kVGPJg6EWLm8bhcnSw"
+    },
+    {
+      "name": "Zazie Beetz",
+      "role": "Sophie Dumond",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR-x0fIpFoL4elf3Z4efMVOFKB9O-V4ERC007wywEHNOJEbVzDW38XnZdb9YPL8Qx0pEKTDxIxYb0ZndRPCzFfW2jhJbontSXxoeY6hMBsMQ"
+    },
+    {
+      "name": "Frances Conroy",
+      "role": "Penny Fleck",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiuNnBamLhTS9VlufDI9NwRoqKnWgOBJI1pzpd3RkPBU2oX1x6zLHqFof885Hx5S7nm5yBPYALQCQ00XtVeHIiU0Hcr7gGeWQYvICqCg8R"
+    },
+    {
+      "name": "Brett Cullen",
+      "role": "Thomas Wayne",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHyEsYvUE_rKj9szAzkf4_QLJsDezdyEGFbU2nJf9dOCCeTsBSWpySJ9qA96Y3p-r85SQOEN2uF2yww8qP-uczLKjdPcF6OqsXJlc40Mf25g"
+    },
+    {
+      "name": "Marc Maron",
+      "role": "Detective Garrity",
+      "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQe5Y34gYefqj8seg0fdXYK9ff6xKZ8S1c608dvMpM50Ynrhd-GOGx_gFq8gojZ1uWIf3tHjPPidLYxBKshA6mcK2YcixonBybOjIEklnac5J2znQJH0Ilu28t42DeX8Odspce2awSc2Rw"
+    },
+    {
+      "name": "Glenn Fleshler",
+      "role": "Randall",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW8h-ULaV7nxkrCN1qYkXkePDGRDcvYm5UMb6WF_Hh0sawz__l1aFtxj_JICk1SaPWaUrWp6_2Tj2q2Om7XjNCa2Hhqwu-7fmJK-DW_EfPnw"
+    },
+    {
+      "name": "April Grace",
+      "role": "Detective Burke",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFzc9PDX6JvUYiduf3tFSeMhinASvc_YN8kq72yC7xigEVPKLnSNcuxiVEf7dgqxUOh9eFpQsh7cj4TYam-8GtXcUpQLMizhZqZ5CnGCw_0Q"
+    },
+    {
+      "name": "Sam Morril",
+      "role": "Gene Ufland",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC7Dq_nDOGZb9qoaQ184GR8AcbuPLc7n9OCs3j-8oocsw9h9JPsdxOnkYTc4gINKMLZPB0Bt1AHbyzJiQERC9rgqvfzv7q1UWLjqkro1Hd"
+    },
+    {
+      "name": "Douglas Hodge",
+      "role": "Alfred Pennyworth",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmYGB6e8zxI6BLYzl7O9j3VbHpxsvIpfr3zw-pME4gYU9bw4H-NJ43iwnmy9xOwHAjpsr9vpcjV0NIz7aKzov139ye0pU9Vs1-DdGtMKhu"
+    }
+  ]
+},
+{
+  "id": 6,
+  "title": "Spider-Man: No Way Home",
+  "description": "With Spider-Man's identity now revealed, Peter Parker asks Doctor Strange for help. When the spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+  "releaseYear": 2021,
+  "genre": ["Action", "Adventure", "Sci-Fi"],
+  "rating": 8.3,
+  "poster": "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+  "watchUrl": "https://www.youtube.com/watch?v=JfVOs4VSpmA",
+  "images": [
+    "https://i.redd.it/uxr2q9bjj9j91.jpg",
+    "https://image.tmdb.org/t/p/original/4q2hz2m8hubgvijz8Ez0T2Os2Yv.jpg"
+  ],
+  "cast": [
+    {
+      "name": "Tom Holland",
+      "role": "Peter Parker / Spider-Man",
+      "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTxz7L3UK4YnacmgaMq7lmdezZzvRPnm1GAP0t2Ywd2QDe9ZAB0JV1ZYpyTUGB-I7uZJNR0y7lUhpk8Xy3WCyVQewAj_eRL-NGTBFzHYwztMrAHUMmAeuQIvzFC8QHFS1ZAT0HZw1eTR9E"
+    },
+    {
+      "name": "Zendaya",
+      "role": "MJ",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvcjWASB_8j_k5QN1C4plPEfBp_wBTcsV5qmfrOGtrwOPYwfd4NQ4IxbsNX0pyWfFKYfuJYXkfzf_XdG98J4xyyCMgIhy2ebWXw1Ea_TM"
+    },
+    {
+      "name": "Benedict Cumberbatch",
+      "role": "Doctor Strange",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9TPUCe_gOh8ySxMbctXAj5gmh1tbg2LTd7veZwWptJJnjxE-rPoTTs7Qw-FrKA5St5awt5kupLqCHa4tzhNKq0_qolUL_hVAEJpbt32XnmQ"
+    },
+    {
+      "name": "Jacob Batalon",
+      "role": "Ned Leeds",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAZq4Ozod0fMTslejqafvysJCE1n8PoJbNOV1oZERu8eScm76dE89oSKotBdRbjg15D9wSGg5-0PjHNRhcCWSmZ35PNGl66UvlLEDTu6ss"
+    },
+    {
+      "name": "Andrew Garfield",
+      "role": "May Parker",
+      "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTil5TMS_gssMz1jV2k_FSdGWdbN61t8Z93HzdZbALBwxTVUI2nMuji8nw7ZCdfsFBA6icspM_YOE3QAsYEmxplvz57rCjTJuSPjcQDbKJb-ojg_e-DwYnFmWVFbHwAcbhFseuYSIo9iKo"
+    },
+    {
+      "name": "Tobey Maguire",
+      "role": "Happy Hogan",
+      "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcT6XJMYrNKy9JdYf4yDnbF3FX3aDyXJsBIm_YEDDo1L6i6BEpdt_mzrhdmuUSoBpdBFEFnpv8gbGwkVvlox_GPh0m7VdtlEOxktaSTKmgpxT46tMpp81cZe1Ifl_531ra8yeecpXQUVUYo"
+    },
+    {
+      "name": "Jamie Foxx",
+      "role": "Max Dillon / Electro",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4QPTu3Uv0h8zYVmZ9fkEwFRiIs1k0OxPKtzcZyzyDQjdyriYWMSC-_8w3eUV0L4kr-3PH7GKdV1ZKyqiFEVGdxrfNZ6wKQJmSg576szTHA"
+    },
+    {
+      "name": "Alfred Molina",
+      "role": "Otto Octavius / Doctor Octopus",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlqmzqgdgMDBArCfgnBfkH_r4m9nJx6QUAYLG49dQkPLmmSoIGFoZYTVaizbiA69OUuve1aI3ODQl3FEBr9SxQNA-KyhpMLfz4JyJT4rE8"
+    },
+    {
+      "name": "Willem Dafoe",
+      "role": "Norman Osborn / Green Goblin",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsaXyy9gMxIe6ETH1Ln7HK847kSWH4RttCagPbZ7gVsJLINw2PxJfcf3HvO2G9UKyvrZgOiKqbjdivKe2QY1NBuxRgUbo5libCslTtH4m4"
+    },
+    {
+      "name": "Thomas Haden Church",
+      "role": "Flint Marko / Sandman",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo1gY-EDHia1KfTkAK_TnXfsYyOx4NzBxDksFB6NzJ7OXFhJHJTq_nQ9CCDUWZ89hlZLjY8pNvlhagiDgmzZ0MgW1eSkBXZdddeLjReF9vZA"
+    }
+  ]
+},
+{
+  "id": 7,
+  "title": "The Matrix",
+  "description": "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.",
+  "releaseYear": 1999,
+  "genre": ["Action", "Sci-Fi"],
+  "rating": 8.7,
+  "poster": "https://static1.srcdn.com/wordpress/wp-content/uploads/2021/11/Matrix-4-Resurrections-Poster.jpg",
+  "watchUrl": "https://www.youtube.com/watch?v=vKQi3bBA1y8",
+  "images": [
+    "https://image.tmdb.org/t/p/original/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+    "https://image.tmdb.org/t/p/original/aOi3bkm8Sbi2ta18jzKsb1M9WZ1.jpg"
+  ],
+  "cast": [
+    {
+      "name": "Keanu Reeves",
+      "role": "Neo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4eZWuEgCDYkVxfqi7e1Y058qP1KE-_VSW2sWOE_hs2zEYPJTTKZ45HN38uXdV8DzXUfy7XlDsTsvCo_Gx7pGZXoujMVRs5VGKUcaQFQxJPw"
+    },
+    {
+      "name": "Laurence Fishburne",
+      "role": "Morpheus",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEPE-0AJQFJ44LGXTXMZZ_TAkD9GwWCAwGhal4KKhOhdRtj_W5_dOz9X8IY0Ek938KnkWW_QMMkK-y7faF49it-tbQQnxAIMe3b5mJfnyy"
+    },
+    {
+      "name": "Carrie-Anne Moss",
+      "role": "Trinity",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSofoa9q7fZ6NbmqsN3iZztwb3RPisem_rMMoP7N8kVsO3B9LCJNWcDCf7hQMPBa87hYp8hg5P41rWSuhBqfUk_RCcyen1zanaiAn7Jz51s"
+    },
+    {
+      "name": "Hugo Weaving",
+      "role": "Agent Smith",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8R4c_Wfz1Zh-pTXlYz7GtverszHlyLL5I8Y2_y65XjTKQmktkLZd8padRMTjTR-Ki-yGcqOFq5BI0aqiP-KPryvlffWbh4jxAhnZLV_QQRQ"
+    },
+    {
+      "name": "Gloria Foster",
+      "role": "The Oracle",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDSTDyfsetmX-3AKfOwuBEsqPt9wMi3_RnaHMGlEM4Dw6XrJQdByQhu6-6S-AF8ve-hwVNZ0kC-YaNxXvxW0eAd1AUS11bQA0xeOcw56DV"
+    },
+    {
+      "name": "Joe Pantoliano",
+      "role": "Cypher",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFXBLV9y7x8upHLMcjdouCF_Cm2FCpVWVwB9y-QuRZfHwcXwQVgMcgWjLJgdXBqOHOlGkBcQIxdIe0B7hhY65z6E1AdaaSCmrfM6v8MZWblA"
+    },
+    {
+      "name": "Marcus Chong",
+      "role": "Tank",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1dhMKt7UXmEUHVUktaQTopM7RuhOGgmm7qPG_e5u9-7i9iwyf2U5TmdVSlZqykWdb3dekg6An4mnXA7BjoMLjJ6c3pYCmZoFKNWkSA3q5JQ"
+    },
+    {
+      "name": "Julian Arahanga",
+      "role": "Apoc",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQlcHm8DRJVdhjQzDEcaAO8YkjdlNjA1dRkdwkSsmdJ2f3ibJrkwv170RZcguB-OOhJvRH9gd5-PnpSJr-m1VaL_OORFatwULANmTqtVQp7w"
+    },
+    {
+      "name": "Matt Doran",
+      "role": "Mouse",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8UnfgYOvX0MmeMHSyIIHCiSv7zeOTvcF21U3vEOCQ3ShLjLwZ-s86uyvJ3fJAOSJIvFq3-xRH4qbyOjrK2sO6CC4ckWePWNKsfOCw6p9TQQ"
+    },
+    {
+      "name": "Belinda McClory",
+      "role": "Switch",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRb6SMvknQonggTC7h77ZnqCzJzu7Nw8gUZ7EhEkNKy-FSQU_64BbSfGsHRXIhWrw0szdkvE4FLCCGLuOaeocYJ1sLzdriwtL3jpLzxwXyk6A"
+    }
+  ]
+},
+{
+  "id": 8,
+  "title": "Titanic",
+  "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+  "releaseYear": 1997,
+  "genre": ["Drama", "Romance"],
+  "rating": 7.9,
+  "poster": "https://images.squarespace-cdn.com/content/v1/5c75dfa97d0c9166551f52b1/1571759141591-I1RAI5I59E74DIYCLY57/Large_3909.jpg",
+  "watchUrl": "https://www.youtube.com/watch?v=2e-eXJ6HgkQ",
+  "images": [
+    "https://i.ebayimg.com/00/s/MTA1MFg3Mjg=/z/gnEAAOSwP~tW4HMS/$_57.JPG?set_id=8800005007",
+    "https://image.tmdb.org/t/p/original/sfKj8kz8TARgRZozdnS1Kp25wCp.jpg"
+  ],
+  "cast": [
+    {
+      "name": "Kathy Bates",
+      "role": "Jack Dawson",
+      "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSgvHuVyJXzf29HZynCl112a40AOW9bGaiCwT97Ge3euMO0NMo_E4OIisK20vTJ-e6Y9uOFOIz5YCt3L3d-JiBkpVe5YskXwon6BOnKPCXFb7PsOXkOeggf3tKMC4VN2VO8ZX4R70kyADgC"
+    },
+    {
+      "name": "Kate Winslet",
+      "role": "Rose DeWitt Bukater",
+      "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRi--CtJvXsgrmF2JwvLT1_GmBkv1kNRSvSkXroqMASkU9MxAY5LFlRNF4D-s548wlpn7dL3urmc3m29-eJ7T7wrjBizFAWPQDc0c24s-jSJ9ps0SRl_Rl5vCZB3Ns6tAVPLTbZanGP6bJ2"
+    },
+    {
+      "name": "Billy Zane",
+      "role": "Cal Hockley",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2u4wpSuT43rZnhcrHrDxlqf9YYPX53L5F8pqqrN6w781SHPJkfG-dQH4Gsq9BYh9wJKyQWu3evYbzy25kYkUmMXzHSlMmYfTedRIWpZmvFw"
+    },
+    {
+      "name": "Gloria Stuart",
+      "role": "Molly Brown",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxb3iCZARofxzG6Sou28aXFbKHpQT0HP1D6kEWX-aDLs5ZUBlTFCr2dFy6OIbsITuY0xTIsNp6J95DZ_WbsgzCFAlSvIzKoxIQzoPwMk-R"
+    },
+    {
+      "name": "Frances Fisher",
+      "role": "Ruth DeWitt Bukater",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcPKnagn7Ypfz9N-mHlqKbHTBHw4JaOAksN1LJffdQKrLATNSBwVFcpAaaImmAiTWKB2EW7xFovHZH8RiEUxpp-UsrzsyYspkLQdUtdDwVOA"
+    },
+    {
+      "name": "Danny Nucci",
+      "role": "Fabrizio",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAFVmsI1pWUM7bL4zsuP0eyw7sZF5HTYZOU4mmvcGkS9xJ1VPNCc3fskTTuwd4l2A9y4qIDE7L3tWVfEoJf2aM9jTvO1O8zoEUazxBK4z9hw"
+    },
+    {
+      "name": "David Warner",
+      "role": "Spicer Lovejoy",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiDrltPgPKi6YSTDgZg3UE1vwRbsuxBwUc8NHwoNAFNksTO1isoXyvE9qD4JM_hPjnxVd9ZTbdr1FT9_-fR3zGPwMnUtAphPuU9-wIh7E"
+    },
+    {
+      "name": "Jonathan Hyde",
+      "role": "J. Bruce Ismay",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUTSrvQfLhpVkqtC0rYfXpXa-uzoxPKyXqGB7vQ383KwnbzALkJbO4Bfffxr9QQ-vo5XvYWNiFg6crQDT1yzjOzNZ11UsdO5ktBkXQuo3U"
+    },
+    {
+      "name": "Bernard Hill",
+      "role": "Captain Edward Smith",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpuKFaMJ1GNW6y0qUBD2vmnLNxkm7evk0vXpCpkQs_5EqoMI_jyc4LITCY1OSBOS34WAM6o4FDTbv78Cid1SmuNBDuoMWIQC4EDMKr1LP39Q"
+    },
+    {
+      "name": "Ewan Stewart",
+      "role": "First Officer Murdoch",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5vMu0PUTAXD0tXvytEga2C3SrYdMjAXpGdEmkd5bOvoGhzo27H-axo4oOlthSMJtEmGs1lJGzPxH_1C23cHqBD7v8spVRi4ldhMRg7naH"
+    }
+  ]
+},
+{
+  "id": 9,
+  "title": "Black Panther",
+  "description": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and confront a challenger from his country's past.",
+  "releaseYear": 2018,
+  "genre": ["Action", "Adventure", "Science Fiction"],
+  "rating": 7.3,
+  "poster": "https://image.tmdb.org/t/p/original/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+  "watchUrl": "https://www.youtube.com/watch?v=xjDjIWPwcPU",
+  "images": [
+    "https://m.media-amazon.com/images/I/81dae9nZFBS.jpg",
+    "https://image.tmdb.org/t/p/original/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg"
+  ],
+  "cast": [
+    {
+      "name": "Chadwick Boseman",
+      "role": "T'Challa / Black Panther",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCG9NfwvrdLeZ_lrA58LBOWRHxsTXC8k_JX180yGhwB93xybAOjVskynUUMeTvuxwllZ59zDVKZHArcOzVdArSy9aaBrnfAIbe2vfpuUSakg"
+    },
+    {
+      "name": "Michael B. Jordan",
+      "role": "Erik Killmonger",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzLR9BOgfLGYt7DBA0S0cm9G6g6AVuJih42fCtt0Eem0MNhsT203TgdBNMb9HMhI2RTqi9WsUJJAwMzT9fYDJ83rq7HEgQuIsNSQYMDZGFBQ"
+    },
+    {
+      "name": "Lupita Nyong'o",
+      "role": "Nakia",
+      "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT5znbUSbde0Zyr0VHy1-ExjeC5HdFCc7FZtaCl-eDCxJ1api500jPWLe1dtfUEf_cO6-0fWd8KYPGlGQmGM5rrCMUOvYsA0KXnVNzbbeHSAVbHymmXgA6FH9Uidv6dc9OUFpsb-rjVcKow"
+    },
+    {
+      "name": "Danai Gurira",
+      "role": "Okoye",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTaFZqoLSo2_yUq64dz9NIJWf3mTo6xkGu9lTr8juElicRWOEsq62B0oRPZ7crxdsGqxMTSGqehTihL7LEBZjNeDwxJlo4GtDLAxNfeEFR4g"
+    },
+    {
+      "name": "Martin Freeman",
+      "role": "Everett K. Ross",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcrV8DhU-dnaU7WdrGsESR6NYSD_eJbdjxs1Rp6x2AA80GLvqwSJW2UUxezGd9MCSwFiGJmJ5sajDlqHbEGbL2IvoV7FrSbaBpXDablqiaFA"
+    },
+    {
+      "name": "Letitia Wright",
+      "role": "Shuri",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYe2RgVm-MN6ZSD8iEKT3PfQAwzzmW1xsVkSwmpPcoD7s9dGqQNrPinhnNdrn1E9JDDBBmZGWJ0cMTXKyD6y_yScdH0JCeTBtRFJQVYMVp"
+    },
+    {
+      "name": "Winston Duke",
+      "role": "M'Baku",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlzfz6RdDk3VSOFu4h_JNsny4qo5n5pM69i-TfEuvyZ8EyvGZUZkK2FtjbxhWTXwq0VxxbIBT_TcsIXDFqaPKYSxpn4IHwRtMLQdDBclDR"
+    },
+    {
+      "name": "Angela Bassett",
+      "role": "Ramonda",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3fFS_shoHLu4rBCn_reakv_tyz4iWSlb9XE8LKcfZIInn4ca6VshGhf2CR5-qjjVNzip9FLgE0vwNYpSyMwgP60Ave8_aL67pW-sVjtnT"
+    },
+    {
+      "name": "Atandwa Kani",
+      "role": "Zuri",
+      "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRvGpdMacr1_BmaKWmGpKSAsqlwq_yQ65QIrryAUywHBKSI5m3YR4ZYMGWJHvOXUCyi-euTxeoCrAlwK0Op2Z0RH3jy_KaSsSOUv16gbYjon8LsV4SpjUt3kicl2RlClFfff7pdGWwc1trW"
+    },
+    {
+      "name": "Sasha Morfaw",
+      "role": "Ulysses Klaue",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVlOytZkGsEg1X-Yj3yL_X4ivWLqVGEO0XxQui65FlDBMHglSR08BsuWizk7wTYJKdD87cbXtdz0C4Tr2omps95Jr6cNTqs-W6HWVlta9Zpg"
+    }
+  ]
+},
+{
+  "id": 10,
+  "title": "Doctor Strange",
+  "description": "After a tragic accident, brilliant but arrogant surgeon Stephen Strange sets out on a journey of healing, only to discover the hidden world of magic and alternate dimensions.",
+  "releaseYear": 2016,
+  "genre": ["Action", "Adventure", "Fantasy"],
+  "rating": 7.5,
+  "poster": "https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/02/doctor-strange-2-poster-social-featured.jpg",
+  "watchUrl": "https://www.youtube.com/watch?v=Lt-U_t2pUHI",
+  "images": [
+    "https://i.pinimg.com/736x/0f/f3/c9/0ff3c9f36e5a4cc6db99981f33b964d1.jpg",
+    "https://image.tmdb.org/t/p/original/y6hF3s7Jmso6xglE1LZ3IrdbyQ.jpg"
+  ],
+  "cast": [
+    {
+      "name": "Benedict Cumberbatch",
+      "role": "Dr. Stephen Strange",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9TPUCe_gOh8ySxMbctXAj5gmh1tbg2LTd7veZwWptJJnjxE-rPoTTs7Qw-FrKA5St5awt5kupLqCHa4tzhNKq0_qolUL_hVAEJpbt32XnmQ"
+    },
+    {
+      "name": "Benjamin Bratt",
+      "role": "Karl Mordo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNC68Dg2jFsGH07JzdIL4yV-vf1rIQB5Zj3rSf7VU8Lhk9GJuq3eLbAxHIT26y2Ln0Ttp48p697omBP7paqD4smSG9M7DxQq7WZoAmnB_Ekg"
+    },
+    {
+      "name": "Rachel McAdams",
+      "role": "Christine Palmer",
+      "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTrR02TyqtxfyY0P1pkiiZdJcxZ2dfV1e2xo5szEELwxgAUR9SJq4VTQwnjW1s9NPx0RGgKOf6RBKZ98t2ZNkXExRyTIMacCjCd5IkFmXjoIiByHEt5n3kT_tJSqnR5rKDgJFxL9vs8R37p"
+    },
+    {
+      "name": "Benedict Wong",
+      "role": "Wong",
+      "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSQJ3sKIPG4EwK6Dn9j5ujiNAa-9Hpkg91w77Jx8isHU0zMWKatzOFyRoaH2UkKi9n4thbhLnRkpR38KVQ8QuyboYaWSpHHoCAznujpUows0nGmveNDJP1XIZzF-bzPFGY8odaci-32sSel"
+    },
+    {
+      "name": "Mads Mikkelsen",
+      "role": "Kaecilius",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGMctNl3lVluH7-bNIX_KIJ1GOrP5xya9IUbP2I_KLZssTXn9EIanOHX01ix0UiocUkYbNitpcyVvGg2cPKOcD6WK0bhXbh4Kukivst2hTA"
+    },
+    {
+      "name": "Tilda Swinton",
+      "role": "The Ancient One",
+      "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQKyD7Vr_J7MkVVR5mox3TgqgWEeAdoi3z13CFgD8vazaaWzbxdM4ueogJnw-dmZUHfujLPSvvJYTdPUDMeX3HEw3ASjQL3liQjIZjuOsbzrKgAiEm2-ZJirVvFQ4kPRodQSFhSHbaNbTun"
+    },
+    {
+      "name": "Michael Stuhlbarg",
+      "role": "Dr. Nicodemus West",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwVPhCUwPy57yPRu5YSTTaI77N2RNVPX84ToQYs41JxYqpRyjrRZe8pj-GpwkAp8HkILZMocmS7O8RtUXc2-9g113Hadx0HlvI2KZ0LZtN"
+    },
+    {
+      "name": "Annarie Boor",
+      "role": "Lucian",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSIYhmVYdrhJBsnb5LUCWXZkH3Qps40In2WzTmCxcFtA8V9gvR_9FIjw1bLzPJhWUMp-A-YNWM0MET-XNV7i6S-K4vLAQIR0AZfmYCYqIpGA"
+    },
+    {
+      "name": "Topo Wresniwiro",
+      "role": "Jonathan Pangborn",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw8rvKlNvmYc5iS6lAG3RDMfXCBEz_aW3vD-dKv6kNSd53uB6pVqvpFcNQt2CYbeu3g1IDSIMxJX80Z4aIQuKhpE2I0KZQ3LZNNySE-0Bn"
+    },
+    {
+      "name": "Stan Lee",
+      "role": "Dr. Bruner",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV_iDd9PxcYUw4IHe7mFMgfHu92T5xV8pjTvh5mjZirBSBMHxSvcJyjpAAB5kQ6zqN6bNbIsQcwjAVb6QrfcjAX0J1UmBKDvX4zi9NRlrK"
+    }
+  ]
+}
+]
+
+
+
+
+
+
