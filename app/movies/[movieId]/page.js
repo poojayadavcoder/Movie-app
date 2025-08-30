@@ -7,8 +7,9 @@ import Header from "@/components/Header"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import Footer from "@/components/Footer"
+
 import { FaStar} from "react-icons/fa";
+import Footer from "@/components/Footer"
 
 export default function MovieDes() {
     const {movieId}=useParams()

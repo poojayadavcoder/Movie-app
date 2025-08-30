@@ -1,8 +1,11 @@
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFilm, FaVideo, FaPlay, FaRegPlayCircle } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <div className='w-full h-auto bg-black flex justify-start items-center flex-col'>
+      <FaFilm className="text-white text-2xl " style={{ stroke: 'rgb(166,132,255)', strokeWidth: 20 }}/>
+      
     <div className='w-full h-[200px] bg-black pt-[50px] flex 
     justify-around items-start gap-5'>
         <div>

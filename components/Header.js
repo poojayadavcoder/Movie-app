@@ -10,7 +10,8 @@ export default function Header() {
     const pathname = usePathname();
     const [isDark,setIsDark]=useState(false)
   return (
-    <div className='w-full h-[80px] bg-black flex justify-between items-center px-3'>
+    <div className='w-full h-[70px] fixed top-0 left-0
+     bg-black/80 z-50 flex justify-between items-center px-3'>
      <h1 className='text-violet-400'>Movie App</h1>
      <ul className='flex gap-6 font-semibold '>
         <li>

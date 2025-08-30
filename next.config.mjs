@@ -14,6 +14,47 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'wallpapercat.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'encrypted-tbn2.gstatic.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'resizing.flixster.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'images.fandango.com',
+        pathname: '/**',
+      },
+    //  images.fandango.com
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn3.gstatic.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'ectopolis.hu',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'blogger.googleusercontent.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.theatlantic.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
         hostname: 'static1.srcdn.com',
         pathname: '/**',
       },

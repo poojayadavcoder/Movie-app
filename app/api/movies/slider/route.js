@@ -1,6 +1,5 @@
-
+import sliderData from '../../../../slider.json'
 
 export function GET(){
-    // console.log(movieData.movies)
-    return  Response.json('')
+    return  Response.json(sliderData.slider)
 }
