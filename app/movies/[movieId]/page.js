@@ -7,7 +7,6 @@ import Header from "@/components/Header"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
 import { FaStar} from "react-icons/fa";
 import Footer from "@/components/Footer"
 
@@ -15,29 +14,48 @@ export default function MovieDes() {
     const {movieId}=useParams()
     const swiperRef = useRef(null);
     const [movieData,setMovieData]=useState({})
+    // const [trendingMovie,setTrendingMovie]=useState([])
      const [movieAllData,setMovieAllData]=useState([])
     
-     useEffect(()=>{
+     const [highRatedMovies, setHighRatedMovies] = useState({});
+
+
+
+async function fetchHighRatedMovies() {
+  const response = await fetch(`/api/movies/highRatedMovie/${movieId}`);
+  const data = await response.json();
+  setMovieData(data);
+}
+   async function fetchData(){
+      const response= await fetch(`/api/movies/${movieId}`)
+      const data= await response.json()
+      // setHighRatedMovies(data)
+      setMovieData(data)
+      }
+
+      async function fetchAllData(){
+      const response= await fetch(`/api/movies`)
+      const data= await response.json()
+      setMovieAllData(data)
+
+      }
+      console.log(movieData)
+      
+    useEffect(()=>{
       fetchData()
+      fetchHighRatedMovies();
       },[movieId])
 
        useEffect(()=>{
       fetchAllData()
       },[])
-    
-    async function fetchData(){
-      const response= await fetch(`/api/movies/${movieId}`)
-      const data= await response.json()
-      setMovieData(data)
-      }
-      console.log(movieData)
 
-       async function fetchAllData(){
-      const response= await fetch(`/api/movies`)
-      const data= await response.json()
-      setMovieAllData(data)
-      }
-      console.log(movieAllData)
+  // console.log(highRatedMovies)
+  // console.log(movieData)
+  //  const highRatedMovie = highRatedMovies.filter(item => item.id === movieId);
+  //  console.log(highRatedMovie)
+  // const currentMovie = highRatedMovie || movieData; 
+    
   return (
     <>
     <Header/>
@@ -183,3 +201,5 @@ export default function MovieDes() {
    
   )
 }
+
+

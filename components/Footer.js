@@ -1,13 +1,23 @@
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import { FaFilm, FaVideo, FaPlay, FaRegPlayCircle } from "react-icons/fa";
+import { FaFilm} from "react-icons/fa";
+import { FaStarAndCrescent } from "react-icons/fa";
+
 
 export default function Footer() {
   return (
     <div className='w-full h-auto bg-black flex justify-start items-center flex-col'>
-      <FaFilm className="text-white text-2xl " style={{ stroke: 'rgb(166,132,255)', strokeWidth: 20 }}/>
-      
-    <div className='w-full h-[200px] bg-black pt-[50px] flex 
-    justify-around items-start gap-5'>
+      <div className="flex gap-3 justify-center items-center">
+      <FaStarAndCrescent className="text-white text-2xl rotate-180"
+      style={{ stroke: 'rgb(166,132,255)', strokeWidth: 5 }}/>
+     <div className="border-[1px] border-violet-400 p-1 rounded-[5px]">
+       <FaFilm className="text-white text-2xl"
+        style={{ stroke: 'rgb(166,132,255)', strokeWidth: 20 }}
+        />
+      </div> 
+      <FaStarAndCrescent className="text-white text-2xl rotate-0"
+      style={{ stroke: 'rgb(166,132,255)', strokeWidth: 5 }}/>
+      </div>
+    <div className='w-full h-[200px] bg-black pt-[50px] flex justify-around items-start gap-5'>
         <div>
             <h1 className='text-[20px] font-semibold text-violet-400'>Movie Go</h1>
             <div className='flex justify-start items-start mt-3 flex-col gap-2'>

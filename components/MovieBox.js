@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Link from "next/link";
 
 
 export default function MovieBox({movieData}) {
@@ -59,7 +60,10 @@ export default function MovieBox({movieData}) {
               movieData.map((item)=>{
                 return (
                  <SwiperSlide key={item.id}>
-                    <div className="w-[230px] h-[300px] overflow-hidden  rounded-[15px]  relative shadow-xs shadow-violet-400">
+                    <Link href={`/movies/${item.id}`} 
+                    // className="w-[230px] h-[300px] overflow-hidden  rounded-[15px]  relative shadow-xs shadow-violet-400"
+                    >
+                        <div className="w-[230px] h-[300px] overflow-hidden  rounded-[15px]  relative shadow-xs shadow-violet-400">
 
                     <div className="w-[280px] min-h-[280px] bg-black overflow-hidden group" >
                     
@@ -113,7 +117,8 @@ export default function MovieBox({movieData}) {
                   </div>
                   </div>
                   </div>
-                    </div>
+                  </div>
+                    </Link>
 
 
                   </SwiperSlide>
@@ -121,19 +126,11 @@ export default function MovieBox({movieData}) {
            }
            )
         }
-           
-           
-                
-             </Swiper>
+         </Swiper>
              
             </div>
-             
-             
-               
-              
-           
-    
-                 {/* {showPlayer && (
+       
+        {showPlayer && (
             <div className="fixed inset-0 bg-black/90 flex 
             justify-center items-center z-50">
               <div className="p-4 rounded-xl relative
@@ -156,8 +153,7 @@ export default function MovieBox({movieData}) {
                  ></iframe>
                  </div>
             </div>
-          )} */}
-    
+          )} 
          
           </div>
         

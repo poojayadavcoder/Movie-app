@@ -7,7 +7,7 @@ import Slider from "./Slider";
 
 export default function HeroSection() {
   const [movieData,setMovieData]=useState([])
-  const [hightMovieRatedData,sethightMovieRatedData]=useState([])
+  const [highMovieRatedData,sethighMovieRatedData]=useState([])
   
   useEffect(()=>{
   fetchData()
@@ -21,11 +21,11 @@ export default function HeroSection() {
   }
 
    async function fetchMovieData(){
-  const response= await fetch('/api/movies/hightRatedMovie')
+  const response= await fetch('/api/movies/highRatedMovie')
   const data= await response.json()
-  sethightMovieRatedData(data)
+  sethighMovieRatedData(data)
   }
-  console.log(hightMovieRatedData)
+  console.log(highMovieRatedData)
  
 
   return (
@@ -40,7 +40,7 @@ export default function HeroSection() {
     <h1 className="text-2xl font-semibold text-violet-400 px-3
      py-4 ">Hight Rated Movies</h1>
    </div> 
-   <MovieBox movieData={hightMovieRatedData}  />
+   <MovieBox movieData={highMovieRatedData}  />
   <Footer/>
      </>
   )

@@ -1,9 +1,8 @@
-// import sliderData from '../../../../slider.json'
-
+// import highRatedMovie from '../../../../highRatedMovie.json'
+// // import movieData from '../../../../../highRatedMovie.json'
 // export function GET(){
-//     return  Response.json(sliderData.slider)
+//     return  Response.json(highRatedMovie)
 // }
-
 
 
 
@@ -13,7 +12,7 @@ export async function GET() {
   try {
     const client = await clientPromise;
     const db = client.db("poojadbs"); // Replace with your DB name
-    const movies = await db.collection("sliderMovies").find({}).toArray();
+    const movies = await db.collection("highRatedMovies").find({}).toArray();
 
     return Response.json(movies);
   } catch (error) {

@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div className='w-full h-[70px] fixed top-0 left-0
      bg-black/80 z-50 flex justify-between items-center px-3'>
-     <h1 className='text-violet-400'>Movie App</h1>
+     <h1 className='text-violet-400'>Movie Go</h1>
      <ul className='flex gap-6 font-semibold '>
         <li>
          <Link
@@ -20,7 +20,7 @@ export default function Header() {
            className={pathname === "/" ? " border-[1px]  border-violet-400 px-2 py-1 rounded-[8px] text-violet-400" : 
             "text-white"}
           >
-            Home
+            Movies
           </Link>
         </li>
         <li>
