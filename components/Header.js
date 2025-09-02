@@ -4,14 +4,32 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import SunIcon from './SunIcon';
 import MoonIcon from './MoonIcon';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
     const pathname = usePathname();
     const [isDark,setIsDark]=useState(false)
+    const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) { 
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className='w-full h-[70px] fixed top-0 left-0
-     bg-black/80 z-50 flex justify-between items-center px-3'>
+     <div
+      className={`w-full h-[60px] fixed top-0 left-0 z-50 flex justify-between items-center px-3 transition-colors duration-300 ${
+        isScrolled ? "bg-black/80" : "bg-black/40"
+      }`}
+    >
      <h1 className='text-violet-400'>Movie Go</h1>
      <ul className='flex gap-6 font-semibold '>
         <li>

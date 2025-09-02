@@ -5,7 +5,22 @@ const nextConfig = {
        {
         protocol: 'https',
         hostname: 'image.tmdb.org',
-        pathname: '/**', // Allows all paths
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'www.bollywoodhungama.com',
+        pathname: '/**', 
+      },
+       {
+        protocol: 'https',
+        hostname: 'img.nowrunning.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'images.lifestyleasia.com',
+        pathname: '/**',
       },
       {
         protocol: 'https',
@@ -22,6 +37,17 @@ const nextConfig = {
         hostname: 'encrypted-tbn2.gstatic.com',
         pathname: '/**',
       },
+       {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'stat4.bollywoodhungama.in',
+        pathname: '/**',
+      },
+      // images.unsplash.com  
        {
         protocol: 'https',
         hostname: 'resizing.flixster.com',

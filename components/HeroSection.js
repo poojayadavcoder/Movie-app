@@ -1,47 +1,50 @@
-"use client"
-
-import { useEffect, useState } from "react"
 import Footer from "./Footer";
-import MovieBox from "./MovieBox";
+import HighRatedMovie from "./HighRatedMovie";
 import Slider from "./Slider";
+import TrendingMovie from "./TrendingMovie";
+import UpcomingMovie from "./UpcomingMovie";
 
-export default function HeroSection() {
-  const [movieData,setMovieData]=useState([])
-  const [highMovieRatedData,sethighMovieRatedData]=useState([])
-  
-  useEffect(()=>{
-  fetchData()
-  fetchMovieData()
-  },[])
+async function getSliderData() {
+   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/slider`, {
+    cache: "no-store", // always fresh
+  });
+  return res.json();
+}
 
-  async function fetchData(){
-  const response= await fetch('/api/movies')
-  const data= await response.json()
-  setMovieData(data)
-  }
+async function getTrendingMovieData() {
+   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies`, {
+    cache: "no-store", // always fresh
+  });
+  return res.json();
+}
 
-   async function fetchMovieData(){
-  const response= await fetch('/api/movies/highRatedMovie')
-  const data= await response.json()
-  sethighMovieRatedData(data)
-  }
-  console.log(highMovieRatedData)
- 
+async function getHighMovieData() {
+   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/highRatedMovie`, {
+    cache: "no-store", // always fresh
+  });
+  return res.json();
+}
+// async function getUpcomingMovieData() {
+//    const res = await fetch(`api/movies/upcomingMovies`, {
+//     cache: "no-store", // always fresh
+//   });
+//   return res.json();
+// }
+
+export default async function HeroSection() {
+
+  const sliderData = await getSliderData();
+  const trendingMovieData = await getTrendingMovieData();
+  const highMovieData = await getHighMovieData()
+  // const upcomingMovieData=await getUpcomingMovieData()
 
   return (
     <>
-    <Slider/>
-   <div className="w-full bg-black">
-    <h1 className="text-2xl font-semibold text-violet-400 px-3
-     py-4 ">Trending Movies</h1>
-   </div> 
-   <MovieBox movieData={movieData}  />
-<div className="w-full bg-black">
-    <h1 className="text-2xl font-semibold text-violet-400 px-3
-     py-4 ">Hight Rated Movies</h1>
-   </div> 
-   <MovieBox movieData={highMovieRatedData}  />
-  <Footer/>
+    <Slider initialData={sliderData}/>
+    <TrendingMovie movieData={trendingMovieData}/>
+    <UpcomingMovie/>
+    <HighRatedMovie movieData={highMovieData}/>
+    <Footer/>
      </>
   )
 }
