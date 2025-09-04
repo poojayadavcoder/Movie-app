@@ -42,12 +42,33 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
         pathname: '/**',
       },
+       {
+        protocol: 'https',
+        hostname: 'assets.gadgets360cdn.com',
+        pathname: '/**',
+      },
+             {
+        protocol: 'https',
+        hostname: 'sm.mashable.com',
+        pathname: '/**',
+      },
+      // 
       {
         protocol: 'https',
         hostname: 'stat4.bollywoodhungama.in',
         pathname: '/**',
       },
-      // images.unsplash.com  
+      {
+        protocol: 'https',
+        hostname: 'mm-wp-prod-uploads.s3.ap-south-1.amazonaws.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'media5.bollywoodhungama.in',
+        pathname: '/**',
+      },
+      // images.unsplash.com  suryaa.com
        {
         protocol: 'https',
         hostname: 'resizing.flixster.com',

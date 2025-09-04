@@ -10,124 +10,87 @@
     "rating": null,
     "duration": "2h 40m",
     "description": "A gritty cop story where the hero faces a criminal empire threatening Mumbai.",
-    "bannerImage": "https://stat4.bollywoodhungama.in/wp-content/uploads/2025/08/Ek-Chatur-Naar-2-2.jpg"
+    "bannerImage": "https://stat4.bollywoodhungama.in/wp-content/uploads/2025/08/Ek-Chatur-Naar-2-2.jpg",
+     "mainImg":"https://stat4.bollywoodhungama.in/wp-content/uploads/2025/08/Video-1.jpg"
 
   },
   {
     "id": 2,
-    "title": "Dream Beyond",
+    "title": "Love In Vietnam",
     "genre": ["Comedy", "Thriller"],
     "language": "Hindi",
-    "releaseDate": "2025-11-22",
-    "director": "Imtiaz Ali",
+    "releaseDate": "12 Sep 2025",
+    "director": "Rahhat Shah Kazmi",
     "cast": ["Kartik Aaryan", "Alia Bhatt"],
     "rating": null,
     "duration": "2h 20m",
     "description": "Two strangers meet on a train journey and their lives change forever.",
-    "bannerImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+    "bannerImage": "https://mm-wp-prod-uploads.s3.ap-south-1.amazonaws.com/wp-content/uploads/2024/05/23133805/Untitled-design-2024-05-23T133711.154.png"
   },
   {
     "id": 3,
-    "title": "Galaxy Raiders",
+    "title": "Jolly LLB 3",
     "genre": ["Comedy", "Thriller"],
     "language": "Hindi",
-    "releaseDate": "2025-12-25",
+    "releaseDate": "12 Dec 2025",
     "director": "Nitesh Tiwari",
     "cast": ["Hrithik Roshan", "Deepika Padukone"],
     "rating": null,
     "duration": "2h 55m",
     "description": "A space exploration team fights alien forces to save Earth from destruction.",
-    "bannerImage": "https://images.unsplash.com/photo-1518770660439-4636190af475"
+    "bannerImage": "https://m.media-amazon.com/images/M/MV5BMDFhYzVhYmQtYmMwOC00NzExLTkxM2MtOWMxM2YwMzQ3MDIxXkEyXkFqcGc@._V1_QL75_UY281_CR18,0,500,281_.jpg"
   },
   {
     "id": 4,
-    "title": "Legacy of Kings",
-    "genre": ["Comedy", "Thriller"],
+    "title": "Mannu Kya Karegga?",
+    "genre": ["Drama", "Romance"],
     "language": "Hindi",
-    "releaseDate": "2026-01-26",
-    "director": "Sanjay Leela Bhansali",
+    "releaseDate": "",
+    "director": "Ssanjay Tripaathy",
     "cast": ["Ranbir Kapoor", "Kriti Sanon"],
     "rating": null,
     "duration": "3h 10m",
     "description": "An epic tale of royal power struggles and forbidden love in ancient India.",
-    "bannerImage": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+    "bannerImage": "https://media5.bollywoodhungama.in/wp-content/uploads/2025/08/Mannu-Kya-Karegga-1-533x300.jpg"
   },
   {
     "id": 5,
-    "title": "Dark Net",
-    "genre": "Thriller",
+    "title": "Nishaanchi",
+    "genre": ["Thriller"],
     "language": "Hindi",
-    "releaseDate": "2026-02-14",
+    "releaseDate": "19 Sep 2025",
     "director": "Anurag Kashyap",
     "cast": ["Ayushmann Khurrana", "Radhika Apte"],
     "rating": null,
     "duration": "2h 25m",
     "description": "A cyber-crime investigator faces a deadly hacker who knows all his secrets.",
-    "bannerImage": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+    "bannerImage": "https://stat4.bollywoodhungama.in/wp-content/uploads/2025/09/Nishaanchi-Official-Trailer-In-Cinemas-September-19-Amazon-MGM-Studios-India-533x300.jpg"
   },
   {
     "id": 6,
-    "title": "Ocean’s Secret",
-    "genre": "Adventure Mystery",
+    "title": "Kantara A Legend Chapter-1",
+    "genre": ["Action","Thriller"],
     "language": "Hindi",
-    "releaseDate": "2026-04-10",
-    "director": "Kabir Khan",
+    "releaseDate": "2 Oct 2025",
+    "director": "Rishab Shetty",
     "cast": ["Sidharth Malhotra", "Janhvi Kapoor"],
     "rating": null,
     "duration": "2h 35m",
     "description": "A deep-sea treasure hunt turns into a battle for survival in the Indian Ocean.",
-    "bannerImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+    "bannerImage": "https://assets.gadgets360cdn.com/pricee/assets/product/202403/Kantara_a_legend_chapter_1_1_1711455024.jpg?downsize=680:*"
   },
   {
     "id": 7,
-    "title": "Whispers",
-    "genre": "Horror",
+    "title": "Go Goa Gone 2",
+    "genre": ["Adventure","Comedy"],
     "language": "Hindi",
-    "releaseDate": "2026-06-05",
-    "director": "Vikram Bhatt",
+    "releaseDate": "15 October 2025",
+    "director": "Raj Nidimoruikram Bhatt",
     "cast": ["Rajkummar Rao", "Ananya Panday"],
     "rating": null,
     "duration": "2h 15m",
     "description": "A haunted mansion hides secrets that no one dares to uncover.",
-    "bannerImage": "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
-  },
-  {
-    "id": 8,
-    "title": "Velocity",
-    "genre": "Action",
-    "language": "Hindi",
-    "releaseDate": "2026-08-14",
-    "director": "Remo D'Souza",
-    "cast": ["Tiger Shroff", "Kriti Sanon"],
-    "rating": null,
-    "duration": "2h 30m",
-    "description": "A high-speed chase across cities leads to shocking revelations.",
-    "bannerImage": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
-  },
-  {
-    "id": 9,
-    "title": "Time Loop",
-    "genre": "Sci-Fi Thriller",
-    "language": "Hindi",
-    "releaseDate": "2026-10-02",
-    "director": "Shoojit Sircar",
-    "cast": ["Vicky Kaushal", "Sara Ali Khan"],
-    "rating": null,
-    "duration": "2h 40m",
-    "description": "A man gets trapped in a time loop and must save his loved ones before it resets.",
-    "bannerImage": "https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50"
-  },
-  {
-    "id": 10,
-    "title": "Rhythm of Dreams",
-    "genre": "Musical Drama",
-    "language": "Hindi",
-    "releaseDate": "2026-12-20",
-    "director": "Zoya Akhtar",
-    "cast": ["Aditya Roy Kapur", "Alia Bhatt"],
-    "rating": null,
-    "duration": "2h 20m",
-    "description": "The journey of a struggling musician chasing his dreams in the big city.",
-    "bannerImage": "https://images.unsplash.com/photo-1487215078519-e21cc028cb29"
+    "bannerImage": "https://sm.mashable.com/mashable_in/seo/default/go-goa-gone-2-announced-what-do-we-know-and-what-have-we-lea_daxk.jpg"
   }
+  
 ]
