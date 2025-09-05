@@ -24,25 +24,25 @@ async function getHighMovieData() {
   });
   return res.json();
 }
-// async function getUpcomingMovieData() {
-//    const res = await fetch(`api/movies/upcomingMovies`, {
-//     cache: "no-store", // always fresh
-//   });
-//   return res.json();
-// }
+async function getUpcomingMovieData() {
+   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/upcomingMovies`, {
+    cache: "no-store", // always fresh
+  });
+  return res.json();
+}
 
 export default async function HeroSection() {
 
   const sliderData = await getSliderData();
   const trendingMovieData = await getTrendingMovieData();
   const highMovieData = await getHighMovieData()
-  // const upcomingMovieData=await getUpcomingMovieData()
+  const upcomingMovieData=await getUpcomingMovieData()
 
   return (
     <>
     <Slider initialData={sliderData}/>
     <TrendingMovie movieData={trendingMovieData}/>
-    <UpcomingMovie/>
+    <UpcomingMovie upcomingMovieData={upcomingMovieData}/>
     <HighRatedMovie movieData={highMovieData}/>
     <Footer/>
      </>

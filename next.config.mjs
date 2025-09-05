@@ -58,6 +58,47 @@ const nextConfig = {
         hostname: 'stat4.bollywoodhungama.in',
         pathname: '/**',
       },
+       {
+        protocol: 'https',
+        hostname: 'filmfare.wwmindia.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img-cdn.publive.online',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets-in.bmscdn.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'www.hindustantimes.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'i0.wp.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'media.assettype.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'images.timesnownews.com',
+        pathname: '/**',
+      },
+             {
+        protocol: 'https',
+        hostname: 'timesofindia.indiatimes.com',
+        pathname: '/**',
+      },
+      // media.assettype.com 
       {
         protocol: 'https',
         hostname: 'mm-wp-prod-uploads.s3.ap-south-1.amazonaws.com',

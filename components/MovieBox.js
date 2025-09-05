@@ -27,7 +27,7 @@ export default function MovieBox({ movieData }) {
     setCurrentVideo("");
   };
   return (
-    <div className="bg-black w-full min-h-[350px] pt-[10px]">
+    <div className="bg-black w-full min-h-[350px] pt-5">
       <div className="relative w-[98%] h-[330px] mx-auto">
         <button
           onClick={() => swiperRef.current.slidePrev()}
