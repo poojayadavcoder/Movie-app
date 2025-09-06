@@ -93,12 +93,72 @@ const nextConfig = {
         hostname: 'images.timesnownews.com',
         pathname: '/**',
       },
-             {
+      {
         protocol: 'https',
-        hostname: 'timesofindia.indiatimes.com',
+        hostname: 'www.deccanchronicle.com',
         pathname: '/**',
       },
-      // media.assettype.com 
+       {
+        protocol: 'https',
+        hostname: 'imgeng.jagran.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'img.onmanorama.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'cdn.hollywoodreporterindia.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'www.koimoi.com',
+        pathname: '/**',
+      },
+        {
+        protocol: 'https',
+        hostname: 'www.hollywoodreporterindia.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'akm-img-a-in.tosshub.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'deadline.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'imagesvs.oneindia.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.naidunia.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'img.onmanorama.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'imageio.forbes.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'blogger.googleusercontent.com',
+        pathname: '/**',
+      },
+      // blogger.googleusercontent.com
       {
         protocol: 'https',
         hostname: 'mm-wp-prod-uploads.s3.ap-south-1.amazonaws.com',

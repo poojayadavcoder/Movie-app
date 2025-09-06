@@ -27,8 +27,14 @@ export default function MovieBox({ movieData }) {
     setCurrentVideo("");
   };
   return (
-    <div className="bg-black w-full min-h-[350px] pt-5">
-      <div className="relative w-[98%] h-[330px] mx-auto">
+    <div className="bg-black w-full min-h-[350px] pt-5 px-3">
+      <div className="relative w-[100%] min-h-[330px] mx-auto ">
+        <div className="absolute right-[30px] -top-[40px] rounded-[10px] flex bg-gradient-to-r from-violet-400 to-pink-400 justify-center items-center cursor-pointer overflow-hidden px-2 py-[3px]">
+            <span className="text-white z-30 relative text-[12px]">
+              View All
+            </span>
+            <div className="w-[100%] h-[100%] bg-black rounded-[20px] absolute inset-0"></div>
+          </div>
         <button
           onClick={() => swiperRef.current.slidePrev()}
           className="absolute left-2 top-1/2 -translate-y-1/2 
@@ -52,8 +58,8 @@ export default function MovieBox({ movieData }) {
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}
-          spaceBetween={20}
-          className="w-full h-full"
+          spaceBetween={2}
+          className="w-[100%] h-full mx-auto"
           breakpoints={{
             320: { slidesPerView: 2 }, // Mobile
             640: { slidesPerView: 3 }, // Small tablets
@@ -66,31 +72,41 @@ export default function MovieBox({ movieData }) {
               <SwiperSlide key={item.id}>
                 <Link href={`/movies/${item.id}`}>
                   <div
-                    className="w-full lg:w-[230px] h-[300px] overflow-hidden rounded-[15px] relative shadow-xs shadow-violet-400 group"
+                    className="w-[100%] lg:w-[220px] min-h-[300px] mx-auto
+                     rounded-[15px] relative my-3 shadow-[0_0_2px_2px_rgba(139,92,246,0.5)] p-2 group"
                   >
-                    <div className="w-full h-[300px] relative overflow-hidden rounded-[10px]">
+                    <div className="w-full h-[240px] relative overflow-hidden
+                     rounded-[10px]">
                       <Image
                         src={item.poster}
                         fill
                         alt="movie-poster"
-                        className="group-hover:scale-110 transition-all object-cover duration-150 ease-linear"
+                        className="group-hover:scale-110 transition-all 
+                        object-cover duration-150 ease-linear"
                       />
 
-                      <div className="w-full h-full bg-black/50 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="w-full h-full bg-black/50 absolute top-0
+                       left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <button
                           onClick={() => handleWatchNow(item.videoUrl)}
-                          className="flex items-center gap-2 bg-violet-400 text-black text-[14px] px-4 py-2 rounded-lg  font-semibold transition hover:bg-violet-500"
+                          className="flex items-center gap-2
+                           bg-violet-400  text-black
+                            text-[12px] px-2 py-2 rounded-lg font-semibold transition
+                             hover:bg-violet-500"
                         >
-                          <FaPlay className="text-white text-[14px]" />
+                          <FaPlay className="text-white text-[12px]" />
                           Watch Now
                         </button>
                       </div>
+                       </div>
 
                       <div
-                        className="flex justify-between items-center w-full absolute bottom-0 left-0 bg-black py-[10px] px-[5px]"
+                        className="flex justify-between items-center
+                         w-full absolute bottom-0 left-0
+                         py-[10px] px-[5px]"
                       >
                         <h1
-                          className="text-violet-400 text-[12px] sm:text-[16px] font-semibold truncate "
+                          className="text-violet-400 text-[12px] sm:text-[14px] font-semibold truncate "
                         >
                           {item.title}
                         </h1>
@@ -102,7 +118,7 @@ export default function MovieBox({ movieData }) {
                           </span>
                         </div>
                       </div>
-                    </div>
+                   
                   </div>
                 </Link>
               </SwiperSlide>

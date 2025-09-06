@@ -27,10 +27,14 @@ export default function Header() {
   return (
      <div
       className={`w-full h-[60px] fixed top-0 left-0 z-50 flex justify-between items-center px-3 transition-colors duration-300 ${
-        isScrolled ? "bg-black/80" : "bg-black/40"
+        isScrolled ? "bg-black" : "bg-black/70"
       }`}
     >
-     <h1 className='text-violet-400'>Movie Go</h1>
+    <h1 className="logo text-2xl text-violet-400"
+// aria-hidden="true"
+>
+Movie <span className='text-white'>Go</span>
+</h1>
      <ul className='flex gap-6 font-semibold '>
         <li>
          <Link

@@ -36,12 +36,20 @@ export default function Slider({ initialData }) {
                 />
                   
                 <div className="w-full h-full absolute top-0 left-0
-                 bg-black/60"></div>
-                <div className=" absolute bottom-[40px] sm:bottom-[130px] left-[20px] md:left-[50px] xl:left-[100px] z-30 w-auto sm:w-[340px] h-[200px] flex justify-start items-start gap-3 flex-col">
-                  <h1 className="text-xl sm:text-3xl font-bold text-white [text-shadow:_0_0_4px_violet]">
+                 bg-gradient-to-t from-black/70 to-black/30"></div>
+                <div className=" absolute bottom-[40px] sm:bottom-[130px] 
+                left-[20px] md:left-[50px] xl:left-[100px] z-30 w-auto 
+                sm:w-[340px] h-[200px] flex justify-start items-start 
+                gap-2 flex-col">
+                  {/* <h1 className="text-xl sm:text-3xl font-bold text-white [text-shadow:_0_0_4px_violet]">
                     {slide.title}
-                  </h1>
-                  <p className="text-[12px] sm:text-[14px] text-white ">
+                  </h1> */}
+    <h1 className="text-[30px] font-bold text-white 
+  [text-shadow:_2px_2px_8px_rgba(0,0,0,0.8),_0_0_12px_violet]">
+  {slide.title}
+</h1>
+  <p className="text-[12px] sm:text-[14px]
+                   text-white ">
                     {slide.description}
                   </p>
                   <div className="flex justify-center items-center gap-3">

@@ -1,8 +1,6 @@
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import { FaFilm } from "react-icons/fa";
-import { FaStarAndCrescent } from "react-icons/fa";
 import background from "../public/layerBackImg.png"
-// my-app/public/wave-haikei.png
+
 export default function Footer() {
   return (
 <div
@@ -12,29 +10,6 @@ bg-no-repeat bg-cover bg-center flex justify-center items-center
 
   style={{ backgroundImage:`url(${background.src})`}}
 >
-
-    
-{/*   
-      
-      <div className="w-full  flex justify-start 
-    items-center flex-col relative "> */}
-
-      {/* <div className="flex h-[100px] gap-3 justify-center items-center">
-        <FaStarAndCrescent
-          className="text-white text-2xl rotate-180"
-          style={{ stroke: "rgb(166,132,255)", strokeWidth: 5 }}
-        />
-        <div className="border-[1px] border-violet-400 p-1 rounded-[5px]">
-          <FaFilm
-            className="text-white text-2xl"
-            style={{ stroke: "rgb(166,132,255)", strokeWidth: 20 }}
-          />
-        </div>
-        <FaStarAndCrescent
-          className="text-white text-2xl rotate-0"
-          style={{ stroke: "rgb(166,132,255)", strokeWidth: 5 }}
-        />
-      </div>  */}
       <div className="w-full h-auto 
        flex justify-around items-start gap-5">
         <div>
@@ -93,7 +68,6 @@ bg-no-repeat bg-cover bg-center flex justify-center items-center
           <FaInstagram className="text-white hover:text-violet-400" />
         </a>
       </div> 
-      {/* </div> */}
     </div>
   );
 }

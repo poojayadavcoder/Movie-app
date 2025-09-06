@@ -16,11 +16,11 @@ export default function UpcomingMovie({ upcomingMovieData }) {
 
   return (
     <>
-      <div className="w-full min-h-[250px] bg-black">
+      <div className="w-full min-h-[250px] bg-black pt-3">
         <h1 className="text-[18px] font-semibold text-violet-400 px-3 ">
           Upcoming Movies
         </h1>
-        <div className="w-full min-h-[200px]  place-items-center mt-1 relative flex justify-center items-center px-3">
+        <div className="w-full min-h-[200px]  place-items-center mt-3 relative flex justify-center items-center px-3">
           <div className="absolute right-[30px] -top-[40px] rounded-[10px] flex bg-gradient-to-r from-violet-400 to-pink-400 justify-center items-center cursor-pointer overflow-hidden px-2 py-[3px]">
             <span className="text-white z-30 relative text-[12px]">
               View All
