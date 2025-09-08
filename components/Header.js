@@ -5,11 +5,14 @@ import { usePathname } from 'next/navigation'
 import SunIcon from './SunIcon';
 import MoonIcon from './MoonIcon';
 import { useEffect, useState } from 'react';
+import { usePopup } from '@/app/context/PopupContext';
 
 export default function Header() {
+  const { showPopup } = usePopup();
     const pathname = usePathname();
     const [isDark,setIsDark]=useState(false)
     const [isScrolled, setIsScrolled] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +29,9 @@ export default function Header() {
 
   return (
      <div
-      className={`w-full h-[60px] fixed top-0 left-0 z-50 flex justify-between items-center px-3 transition-colors duration-300 ${
+      className={`w-full h-[60px] fixed top-0 left-0 z-50 flex 
+        justify-between items-center px-3 transition-colors
+         duration-300 ${showPopup?"blur-sm pointer-events-none":""} ${
         isScrolled ? "bg-black" : "bg-black/70"
       }`}
     >

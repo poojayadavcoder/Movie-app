@@ -1,50 +1,47 @@
-import Footer from "./Footer";
-import HighRatedMovie from "./HighRatedMovie";
-import Slider from "./Slider";
-import TrendingMovie from "./TrendingMovie";
-import UpcomingMovie from "./UpcomingMovie";
+import HeroClientWrapper from "./HeroClientWrapper";
 
 async function getSliderData() {
-   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/slider`, {
-    cache: "no-store", // always fresh
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/slider`, {
+    cache: "no-store",
   });
   return res.json();
 }
 
 async function getTrendingMovieData() {
-   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies`, {
-    cache: "no-store", // always fresh
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies`, {
+    cache: "no-store",
   });
   return res.json();
 }
 
 async function getHighMovieData() {
-   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/highRatedMovie`, {
-    cache: "no-store", // always fresh
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/highRatedMovie`, {
+    cache: "no-store",
   });
   return res.json();
 }
-async function getUpcomingMovieData() {
-   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/upcomingMovies`, {
-    cache: "no-store", // always fresh
+
+export async function getUpcomingMovieData() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/upcomingMovies`, {
+    cache: "no-store",
   });
   return res.json();
 }
 
 export default async function HeroSection() {
-
   const sliderData = await getSliderData();
   const trendingMovieData = await getTrendingMovieData();
-  const highMovieData = await getHighMovieData()
-  const upcomingMovieData=await getUpcomingMovieData()
+  const highMovieData = await getHighMovieData();
+  const upcomingMovieData = await getUpcomingMovieData();
 
   return (
     <>
-    <Slider initialData={sliderData}/>
-    <TrendingMovie movieData={trendingMovieData}/>
-    <UpcomingMovie upcomingMovieData={upcomingMovieData}/>
-    <HighRatedMovie movieData={highMovieData}/>
-    <Footer/>
-     </>
-  )
+    <HeroClientWrapper
+      sliderData={sliderData}
+      trendingMovieData={trendingMovieData}
+      highMovieData={highMovieData}
+      upcomingMovieData={upcomingMovieData}
+    />
+    </>
+  );
 }

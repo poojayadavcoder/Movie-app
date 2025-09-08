@@ -1,5 +1,4 @@
 "use client"
-
 import { useParams } from "next/navigation"
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
@@ -7,8 +6,15 @@ import Header from "@/components/Header"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { FaStar} from "react-icons/fa";
+// import { FaStar} from "react-icons/fa";
 import Footer from "@/components/Footer"
+
+
+import { FaStar } from "react-icons/fa";      // Rating
+import { MdOutlineAccessTime } from "react-icons/md";  // Duration
+import { BsCalendarDate } from "react-icons/bs";  // Year
+import AnimatedDivider from "@/components/AnimatedDivider"
+
 
 export default function MovieDes() {
     const {movieId}=useParams()
@@ -21,17 +27,21 @@ export default function MovieDes() {
 
 
 
-async function fetchHighRatedMovies() {
-  const response = await fetch(`/api/movies/highRatedMovie/${movieId}`);
-  const data = await response.json();
-  setMovieData(data);
+// async function fetchHighRatedMovies() {
+//   const response = await fetch(`/api/movies/highRatedMovie/${movieId}`);
+//   const data = await response.json();
+//   setMovieData(data);
+// }
+ function fetchData() {
+  fetch(`/api/movies/${movieId}`)
+    .then(res => res.json())
+    .then(data => {
+      setMovieData(data);
+      console.log("Fetched movie data:", data);
+    })
+    .catch(err => console.error("Error fetching movie:", err));
 }
-   async function fetchData(){
-      const response= await fetch(`/api/movies/${movieId}`)
-      const data= await response.json()
-      // setHighRatedMovies(data)
-      setMovieData(data)
-      }
+
 
       async function fetchAllData(){
       const response= await fetch(`/api/movies`)
@@ -42,46 +52,47 @@ async function fetchHighRatedMovies() {
       console.log(movieData)
       
     useEffect(()=>{
-      fetchData()
-      fetchHighRatedMovies();
+      if(movieId){
+        fetchData()
+      }
+      // fetchData()
+      // fetchHighRatedMovies();
       },[movieId])
 
        useEffect(()=>{
       fetchAllData()
       },[])
 
-  // console.log(highRatedMovies)
-  // console.log(movieData)
-  //  const highRatedMovie = highRatedMovies.filter(item => item.id === movieId);
-  //  console.log(highRatedMovie)
-  // const currentMovie = highRatedMovie || movieData; 
+
     
   return (
     <>
     <Header/>
       <div className="w-full min-h-[100vh] bg-black relative">
          {movieData.poster ? (
-           <div className="relative w-full h-[300px]">
+           <div className="relative w-full h-[380px]">
           <Image
             src={movieData.poster}
             alt={movieData.title || "movie-poster"}
             fill
             className="object-cover"
           />
-          <div className="w-full h-full bg-black/70 absolute top-0 left-0 z-10"></div>
+          <div className="w-full h-full bg-black/50 absolute top-0 left-0 z-10"></div>
         </div>
       ) : (
         <p className="text-white">Loading...</p>
       )}
       
      <div className="w-full min-h-[500px] flex justify-between items-start">
-      <div className="w-[280px] h-[300px] bg-amber-300
-       relative z-50 -mt-[90px] ml-5">
-         <div className="w-full h-[300px] rounded-[5px] overflow-hidden">
-           {movieData.images? <Image
+      <div className="w-[280px] h-[300px]
+       relative z-50 -mt-[90px] ml-5 rounded-[12px]">
+         <div className="w-full h-[300px] rounded-[5px]  relative
+         overflow-hidden">
+           {movieData.images?<Image
              src={movieData.images[0]}
              alt={movieData.title || "movie-poster"}
              fill
+             className="object-cover"
           />:<p>Loading</p>}
           </div>
         
@@ -108,9 +119,9 @@ async function fetchHighRatedMovies() {
            {movieData.description?<p className="text-white text-[14px]">{movieData.description}</p>:""}
             <div className="bg-gray-100 w-[90%] h-[1px]"></div>
            <div className="flex w-full gap-5">  
-            {movieData.year?<p className="text-white text-[14px]">{movieData.year}</p>:<p className="text-white text-[14px]">2015</p>}
-            {movieData.rating?<p className="text-white text-[14px]">{movieData.rating}</p>:<p className="text-white text-[14px]">8.3</p>}
-            {movieData.duration?<p className="text-white text-[14px]">{movieData.duration}</p>:<p className="text-white text-[14px]">3h 20min</p>}
+            {movieData.year?<div className="flex justify-center items-center gap-[4px]"><span className="text-violet-400 text-[15px]"><BsCalendarDate /></span><p className="text-white text-[14px]">{movieData.year}</p></div>:<p className="text-white text-[14px]">2024</p>}
+            {movieData.rating?<div className="flex justify-center items-center gap-[4px]"><span className="text-violet-400 text-[15px]"><FaStar/></span> <p className="text-white text-[14px]">{movieData.rating}</p></div>:<p className="text-white text-[14px]">8.3</p>}
+            {movieData.duration?<div className="flex justify-center items-center gap-[4px]"><span className="text-violet-400 text-[15px]"><MdOutlineAccessTime/></span> <p className="text-white text-[14px]">{movieData.duration}</p></div>:<p className="text-white text-[14px]">3h 20min</p>}
             </div> 
             <div className="bg-gray-100 w-[90%] h-[1px]"></div>
             <div className="w-full flex justify-start items-start
@@ -123,8 +134,13 @@ async function fetchHighRatedMovies() {
                             movieData.cast.map((item,index)=>{
                                 return (
                                     <div className="w-[140px] min-h-[140px] flex justify-center items-center flex-col gap-5" key={index}>
-                                        <div className="w-[100px] h-[100px]  rounded-[50%] overflow-hidden border-[3px] border-violet-400">
-                                            <img src={item.image} className="w-full h-full object-fill" alt="" />
+                                        <div className="w-[100px] h-[100px] relative
+                                          rounded-[50%] overflow-hidden border-[3px]
+                                           border-violet-400">
+                                            {/* <img src={item.image} className="w-full h-full object-fill" alt="" /> */}
+                                            <Image src={item.image} fill
+                                            alt="movie-img"
+                                            className="object-cover"/>
                                         </div>
                                         <h1 className="text-[13px] font-semibold text-white text-center">{item.name}</h1>
                                     </div>
@@ -140,6 +156,15 @@ async function fetchHighRatedMovies() {
  </div>
       
     </div>
+     {/* <div className="relative w-full py-[50px] bg-black flex justify-center"> */}
+      {/* <div className="w-[80%] h-[2px] bg-violet-400 relative overflow-hidden"> */}
+        {/* Lightning spark */}
+        {/* <div className="spark"></div> */}
+      {/* </div> */}
+    {/* </div> */}
+ {/* <div className="w-[100%] h-[1px] py-[50px] bg-black mx-auto"> <div className="w-[80%] h-[1px] bg-violet-400 mx-auto"></div></div>   */}
+
+ {/* <AnimatedDivider/> */}
     <div className="w-full min-h-[400px] bg-black px-3 flex justify-start 
     items-start gap-5 flex-col">
       <h1 className="text-xl font-semibold text-white pt-5">Similar movie</h1>

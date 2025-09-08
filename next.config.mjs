@@ -12,36 +12,7 @@ const nextConfig = {
         hostname: 'www.bollywoodhungama.com',
         pathname: '/**', 
       },
-       {
-        protocol: 'https',
-        hostname: 'img.nowrunning.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'images.lifestyleasia.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.pinimg.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'wallpapercat.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'encrypted-tbn2.gstatic.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        pathname: '/**',
-      },
+     
        {
         protocol: 'https',
         hostname: 'assets.gadgets360cdn.com',
@@ -52,7 +23,6 @@ const nextConfig = {
         hostname: 'sm.mashable.com',
         pathname: '/**',
       },
-      // 
       {
         protocol: 'https',
         hostname: 'stat4.bollywoodhungama.in',
@@ -60,52 +30,7 @@ const nextConfig = {
       },
        {
         protocol: 'https',
-        hostname: 'filmfare.wwmindia.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'img-cdn.publive.online',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'assets-in.bmscdn.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
         hostname: 'www.hindustantimes.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'i0.wp.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'media.assettype.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'images.timesnownews.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.deccanchronicle.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'imgeng.jagran.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'img.onmanorama.com',
         pathname: '/**',
       },
        {
@@ -138,11 +63,6 @@ const nextConfig = {
         hostname: 'imagesvs.oneindia.com',
         pathname: '/**',
       },
-      {
-        protocol: 'https',
-        hostname: 'img.naidunia.com',
-        pathname: '/**',
-      },
        {
         protocol: 'https',
         hostname: 'img.onmanorama.com',
@@ -158,7 +78,6 @@ const nextConfig = {
         hostname: 'blogger.googleusercontent.com',
         pathname: '/**',
       },
-      // blogger.googleusercontent.com
       {
         protocol: 'https',
         hostname: 'mm-wp-prod-uploads.s3.ap-south-1.amazonaws.com',
@@ -169,70 +88,12 @@ const nextConfig = {
         hostname: 'media5.bollywoodhungama.in',
         pathname: '/**',
       },
-      // images.unsplash.com  suryaa.com
        {
         protocol: 'https',
         hostname: 'resizing.flixster.com',
         pathname: '/**',
       },
-       {
-        protocol: 'https',
-        hostname: 'images.fandango.com',
-        pathname: '/**',
-      },
-    //  images.fandango.com
-      {
-        protocol: 'https',
-        hostname: 'encrypted-tbn3.gstatic.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'ectopolis.hu',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'blogger.googleusercontent.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cdn.theatlantic.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'static1.srcdn.com',
-        pathname: '/**',
-      },
     
-      {
-        protocol: 'https',
-        hostname: 'static1.colliderimages.com',
-        pathname: '/**',
-      },
-      // 
-      {
-        protocol: 'https',
-        hostname: 'lh5.googleusercontent.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'comicbook.com',
-        pathname: '/**',
-      },
-       {
-        protocol: 'https',
-        hostname: 'media.posterstore.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.movieposters.com',
-        pathname: '/**',
-      },
       {
         protocol: 'https',
         hostname: 'm.media-amazon.com',
@@ -240,12 +101,47 @@ const nextConfig = {
       },
        {
         protocol: 'https',
-        hostname: 'irs.www.warnerbros.com',
+        hostname: 'filmyvibe.in',
         pathname: '/**',
       },
        {
         protocol: 'https',
-        hostname: 'i.ebayimg.com',
+        hostname: 'www.hollywoodreporterindia.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.businessoftollywood.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'www.sacnilk.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'static.toiimg.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'film-book.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'preview.redd.it',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'static1.srcdn.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'images.moviesanywhere.com',
         pathname: '/**',
       },
        {
@@ -255,35 +151,113 @@ const nextConfig = {
       },
        {
         protocol: 'https',
-        hostname: 'encrypted-tbn0.gstatic.com',
-        pathname: '/**',
-      },
-      
-      {
-        protocol: 'https',
-        hostname: 'i.redd.it',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'static.fabrik.io',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
         hostname: 'i.ebayimg.com',
         pathname: '/**',
       },
-      {
+       {
         protocol: 'https',
-        hostname: 'mir-s3-cdn-cf.behance.net',
+        hostname: 'static1.colliderimages.com',
         pathname: '/**',
       },
-      
-      
-      
+      {
+        protocol: 'https',
+        hostname: 'i.pinimg.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'cdn.siasat.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        pathname: '/**',
+      },
+        {
+        protocol: 'https',
+        hostname: 'images.news18.com',
+        pathname: '/**',
+      },
+        {
+        protocol: 'https',
+        hostname: 'filmyfocus.com',
+        pathname: '/**',
+      },
+        {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'images.hindustantimes.com',
+        pathname: '/**',
+      },
+      //  {
+      //   protocol: 'https',
+      //   hostname: 'images.news18.com',
+      //   pathname: '/**',
+      // },
+        {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'encrypted-tbn2.gstatic.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'encrypted-tbn3.gstatic.com',
+        pathname: '/**',
+      },
+        {
+        protocol: 'https',
+        hostname: 'encrypted-tbn1.gstatic.com',
+        pathname: '/**',
+      },
+    
        
-      
+      // encrypted-tbn0.gstatic.com   encrypted-tbn0.gstatic.com            i.pinimg.com  images.hindustantimes.com  images.news18.com filmyfocus.com images.firstpost.com
+       {
+        protocol: 'https',
+        hostname: 'filmfare.wwmindia.com',
+        pathname: '/**',
+      },
+        {
+        protocol: 'https',
+        hostname: 'img-cdn.publive.online',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i0.wp.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.assettype.com',
+        pathname: '/**',
+      },
+        {
+        protocol: 'https',
+        hostname: 'dnm.nflximg.net',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'dnm.nflximg.net',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
+        hostname: 'people.com',
+        pathname: '/**',
+      },
+      // editorial.rottentomatoes.com
     ],
   },
 };

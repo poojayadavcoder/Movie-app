@@ -1,3 +1,4 @@
+import { PopupProvider } from "./context/PopupContext";
 import "./globals.css";
 import { Montserrat, Lobster_Two } from "next/font/google";
 
@@ -20,7 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        {children}
+         <PopupProvider>
+          {children}
+        </PopupProvider>
       </body>
     </html>
   );
