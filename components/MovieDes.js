@@ -1,137 +1,89 @@
 "use client"
-import { useParams } from "next/navigation"
-import { useEffect, useRef, useState } from "react"
+
+import {useRef} from "react"
 import Image from "next/image"
 import Header from "@/components/Header"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-// import { FaStar} from "react-icons/fa";
 import Footer from "@/components/Footer"
-
-
 import { FaStar } from "react-icons/fa";      // Rating
 import { MdOutlineAccessTime } from "react-icons/md";  // Duration
 import { BsCalendarDate } from "react-icons/bs";  // Year
-import AnimatedDivider from "@/components/AnimatedDivider"
+import { usePopup } from "@/app/context/PopupContext";
+import YoutubeBox from "./YoutubeBox";
 
-
-export default function MovieDes() {
-    const {movieId}=useParams()
+export default function MovieDes({movie,allMovies}) {
+   const {handleWatchNow,showPlayer}=usePopup()
     const swiperRef = useRef(null);
-    const [movieData,setMovieData]=useState({})
-    // const [trendingMovie,setTrendingMovie]=useState([])
-     const [movieAllData,setMovieAllData]=useState([])
-    
-     const [highRatedMovies, setHighRatedMovies] = useState({});
-
-
-
-// async function fetchHighRatedMovies() {
-//   const response = await fetch(`/api/movies/highRatedMovie/${movieId}`);
-//   const data = await response.json();
-//   setMovieData(data);
-// }
- function fetchData() {
-  fetch(`/api/movies/${movieId}`)
-    .then(res => res.json())
-    .then(data => {
-      setMovieData(data);
-      console.log("Fetched movie data:", data);
-    })
-    .catch(err => console.error("Error fetching movie:", err));
-}
-
-
-      async function fetchAllData(){
-      const response= await fetch(`/api/movies`)
-      const data= await response.json()
-      setMovieAllData(data)
-
-      }
-      console.log(movieData)
-      
-    useEffect(()=>{
-      if(movieId){
-        fetchData()
-      }
-      // fetchData()
-      // fetchHighRatedMovies();
-      },[movieId])
-
-       useEffect(()=>{
-      fetchAllData()
-      },[])
-
-
-    
-  return (
+return (
     <>
     <Header/>
       <div className="w-full min-h-[100vh] bg-black relative">
-         {movieData.poster ? (
-           <div className="relative w-full h-[380px]">
+         {movie.poster ? (
+           <div className="relative w-full h-[420px] hidden md:flex">
           <Image
-            src={movieData.poster}
-            alt={movieData.title || "movie-poster"}
+            src={movie.poster}
+            alt={movie.title || "movie-poster"}
             fill
-            className="object-cover"
+            className="object-cover object-top"
           />
-          <div className="w-full h-full bg-black/50 absolute top-0 left-0 z-10"></div>
+          <div className="w-full h-full bg-black/30 absolute top-0 left-0 z-10"></div>
         </div>
       ) : (
         <p className="text-white">Loading...</p>
       )}
       
-     <div className="w-full min-h-[500px] flex justify-between items-start">
+     <div className="w-full min-h-[500px] flex justify-between
+     items-center gap-[40px] md:gap-0 md:items-start flex-col md:flex-row">
       <div className="w-[280px] h-[300px]
-       relative z-50 -mt-[90px] ml-5 rounded-[12px]">
+       relative md:z-50 mt-[50px] md:mt-[-90px] md:ml-5 rounded-[12px]">
          <div className="w-full h-[300px] rounded-[5px]  relative
          overflow-hidden">
-           {movieData.images?<Image
-             src={movieData.images[0]}
-             alt={movieData.title || "movie-poster"}
+           {movie.images?<Image
+             src={movie.images[0]}
+             alt={movie.title || "movie-poster"}
              fill
              className="object-cover"
           />:<p>Loading</p>}
           </div>
         
-        <button className="border-[1px] border-violet-400 rounded-[8px] text-[14px] w-full text-violet-400 px-7 py-[6px] mt-4 cursor-pointer
+        <button onClick={()=>handleWatchNow(movie.watchUrl)} className="border-[1px] border-violet-400 rounded-[8px] text-[14px] w-full text-violet-400 px-7 py-[6px] mt-4 cursor-pointer
           hover:bg-violet-400 transition-all duration-150 ease-linear hover:text-black">Watch Now</button>
      
       </div>
 
       <div className="w-[100%] min-h-[300px] mt-5 flex items-center justify-end">
-        <div className="w-[95%] min-h-[300px]
+        <div className="w-full md:w-[95%] min-h-[300px]
         flex justify-start items-start flex-col gap-2">
-           <h1 className="text-violet-400 text-[17px]">{movieData.title}</h1>
-           <div className="flex">
+           <h1 className="text-violet-400 text-[17px] pl-2 md:pl-0">{movie.title}</h1>
+           <div className="flex pl-2 md:pl-0">
             {
-             movieData.genre?  
-             movieData.genre.map((item,index)=>{
+             movie.genre?  
+             movie.genre.map((item,index)=>{
                     return (
                         <p className="text-white text-[14px]" key={index}>{item} {index==2?"":"|"}&nbsp;</p>
                     )
                 }):""
             }
            </div>
-           <div className="bg-gray-100 w-[90%] h-[1px]"></div>
-           {movieData.description?<p className="text-white text-[14px]">{movieData.description}</p>:""}
-            <div className="bg-gray-100 w-[90%] h-[1px]"></div>
-           <div className="flex w-full gap-5">  
-            {movieData.year?<div className="flex justify-center items-center gap-[4px]"><span className="text-violet-400 text-[15px]"><BsCalendarDate /></span><p className="text-white text-[14px]">{movieData.year}</p></div>:<p className="text-white text-[14px]">2024</p>}
-            {movieData.rating?<div className="flex justify-center items-center gap-[4px]"><span className="text-violet-400 text-[15px]"><FaStar/></span> <p className="text-white text-[14px]">{movieData.rating}</p></div>:<p className="text-white text-[14px]">8.3</p>}
-            {movieData.duration?<div className="flex justify-center items-center gap-[4px]"><span className="text-violet-400 text-[15px]"><MdOutlineAccessTime/></span> <p className="text-white text-[14px]">{movieData.duration}</p></div>:<p className="text-white text-[14px]">3h 20min</p>}
+           <div className="bg-gray-100 w-[90%] h-[1px] pl-2 md:pl-0"></div>
+           {movie.description?<p className="text-white text-[14px] pl-2 md:pl-0">{movie.description}</p>:""}
+            <div className="bg-gray-100 w-[90%] h-[1px] pl-2 md:pl-0"></div>
+           <div className="flex w-full gap-5 pl-2 md:pl-0">  
+            {movie.year?<div className=" flex justify-center items-center gap-[4px]"><span className="text-violet-400 text-[15px]"><BsCalendarDate /></span><p className="text-white text-[14px]">{movie.year}</p></div>:<p className="text-white text-[14px]">2024</p>}
+            {movie.rating?<div className="flex justify-center items-center gap-[4px]"><span className="text-violet-400 text-[15px]"><FaStar/></span> <p className="text-white text-[14px]">{movie.rating}</p></div>:<p className="text-white text-[14px]">8.3</p>}
+            {movie.duration?<div className="flex justify-center items-center gap-[4px]"><span className="text-violet-400 text-[15px]"><MdOutlineAccessTime/></span> <p className="text-white text-[14px]">{movie.duration}</p></div>:<p className="text-white text-[14px]">3h 20min</p>}
             </div> 
             <div className="bg-gray-100 w-[90%] h-[1px]"></div>
             <div className="w-full flex justify-start items-start
              flex-col gap-5">
-                <h1 className="text-xl font-semibold text-white">Cast</h1>
+                <h1 className="text-xl font-semibold text-white pl-2 md:pl-0">Cast</h1>
                 <div className="w-full flex justify-start items-center 
-                gap-3 flex-wrap pl-5">
+                gap-3 flex-wrap  md:pl-5">
                     {
-                        movieData.cast? 
-                            movieData.cast.map((item,index)=>{
+                        movie.cast? 
+                            movie.cast.map((item,index)=>{
                                 return (
                                     <div className="w-[140px] min-h-[140px] flex justify-center items-center flex-col gap-5" key={index}>
                                         <div className="w-[100px] h-[100px] relative
@@ -156,19 +108,11 @@ export default function MovieDes() {
  </div>
       
     </div>
-     {/* <div className="relative w-full py-[50px] bg-black flex justify-center"> */}
-      {/* <div className="w-[80%] h-[2px] bg-violet-400 relative overflow-hidden"> */}
-        {/* Lightning spark */}
-        {/* <div className="spark"></div> */}
-      {/* </div> */}
-    {/* </div> */}
- {/* <div className="w-[100%] h-[1px] py-[50px] bg-black mx-auto"> <div className="w-[80%] h-[1px] bg-violet-400 mx-auto"></div></div>   */}
 
- {/* <AnimatedDivider/> */}
-    <div className="w-full min-h-[400px] bg-black px-3 flex justify-start 
-    items-start gap-5 flex-col">
+    <div className="w-full h-auto px-3 flex justify-start 
+    items-start gap-5 flex-col bg-black">
       <h1 className="text-xl font-semibold text-white pt-5">Similar movie</h1>
-         <div className="relative w-full h-[330px]">
+         <div className="relative w-full min-h-[330px]">
            {/* Left Chevron */}
            <button
              onClick={() => swiperRef.current.slidePrev()}
@@ -196,12 +140,35 @@ export default function MovieDes() {
              }}
              spaceBetween={25}
              slidesPerView={4}
-             className="w-full h-full"
+             className="w-full h-full flex justify-center items-center"
+              breakpoints={{
+    320: { // mobile
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+     400: { // small tablets
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    640: { // small tablets
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1024: { // desktops
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    1280: { // large screens
+      slidesPerView: 5,
+      spaceBetween: 25,
+    },
+  }}
            >
-             {movieAllData.map((movie) => (
+             {allMovies.map((movie) => (
                <SwiperSlide key={movie.id}>
-                 <div className="w-[230px] h-[300px] overflow-hidden
-                  rounded-[15px]  relative shadow-xs shadow-violet-400">
+                 <div className="w-[95%] lg:w-[230px] h-[320px] sm:h-[300px]  overflow-hidden
+                  rounded-[15px]  relative shadow-xs shadow-violet-400 mx-auto">
+                    <a href={`/pages/movies/${movie.id}`} className="relative">
                    <Image
                      src={movie.poster}
                      width={300}
@@ -209,6 +176,7 @@ export default function MovieDes() {
                      alt="movie-poster"
                      className="object-cover w-full h-full hover:scale-110 transition-transform duration-300"
                    />
+                   </a>
                    <h1 className="text-white bg-black rounded-[5px] text-[13px] px-2 py-[2px] flex justify-center items-center gap-[2px] absolute top-2 right-2">{movie.rating} <span><FaStar color="yellow"/></span></h1>
                   <h1 className="absolute bg-black bottom-[0px] left-0 border-[1px] border-t-0 border-x-0 border-b-violet-400
                   text-[14px] font-semibold text-white 
@@ -222,9 +190,8 @@ export default function MovieDes() {
          </div>
     </div>
     <Footer/>
+    {showPlayer&& <YoutubeBox/>}
     </>
    
   )
 }
-
-

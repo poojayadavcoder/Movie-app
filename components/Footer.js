@@ -1,25 +1,28 @@
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import background from "../public/layerBackImg.png"
 
 export default function Footer() {
   return (
 <div
-className="w-full min-h-[300px] bg-black relative 
-bg-no-repeat bg-cover bg-center flex justify-center items-center
- gap-5 flex-col pt-[120px]"
-
-  style={{ backgroundImage:`url(${background.src})`}}
+className="w-full h-auto relative
+bg-no-repeat bg-cover bg-center flex justify-start items-center
+ gap-6 flex-col py-[20px] mt-2 md:mt-5"
 >
-      <div className="w-full h-auto 
+  <div className=" w-full h-full absolute top-0 left-0 bg-gradient-to-t from-purple-700
+ to-black z-20"></div>
+ <div className="w-full h-[50px] flex justify-center items-center relative z-20 ">
+  <h1 className="font-bold logo text-[30px] text-white shadowLogo">Movie Go</h1>
+ </div>
+      <div className="w-full h-auto relative z-25
        flex justify-around items-start gap-5">
         <div>
           <h1 className="text-[16px] sm:text-[20px] font-semibold
            text-white">
-            Movie Go
+            Links
           </h1>
           <div className="flex justify-start items-start mt-3 flex-col gap-2">
+            <h1 className="text-white text-[13px]"><a href="/">Home</a></h1>
+            <h1 className="text-white text-[13px]"><a href="/pages/movies">Movies</a></h1>
             <h1 className="text-white text-[13px]">About Us</h1>
-            <h1 className="text-white text-[13px]">Careers</h1>
           </div>
         </div>
         <div>
@@ -44,12 +47,13 @@ bg-no-repeat bg-cover bg-center flex justify-center items-center
           </div>
         </div>
       </div>
-      <div className="flex gap-3 w-[90%] border-[1px]
-       border-t-black border-x-0 border-b-0 justify-center items-center py-5">
+      <div className="flex gap-3 w-[90%] border-[1px] relative z-25 pt-10
+       border-t-white border-x-0 border-b-0 justify-center items-center">
         <a
           href="https://www.linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="rounded-full p-2 border-[1px] border-white"
         >
           <FaLinkedin className="text-white hover:text-violet-400" />
         </a>
@@ -57,6 +61,7 @@ bg-no-repeat bg-cover bg-center flex justify-center items-center
           href="https://www.twitter.com"
           target="_blank"
           rel="noopener noreferrer"
+           className="rounded-full p-2 border-[1px] border-white"
         >
           <FaTwitter className="text-white hover:text-violet-400" />
         </a>
@@ -64,6 +69,7 @@ bg-no-repeat bg-cover bg-center flex justify-center items-center
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
+           className="rounded-full p-2 border-[1px] border-white"
         >
           <FaInstagram className="text-white hover:text-violet-400" />
         </a>

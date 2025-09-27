@@ -4,9 +4,16 @@ const nextConfig = {
     remotePatterns: [
        {
         protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/**',
+      },
+       {
+        protocol: 'https',
         hostname: 'image.tmdb.org',
         pathname: '/**',
       },
+
+      // res.cloudinary.com
        {
         protocol: 'https',
         hostname: 'www.bollywoodhungama.com',
@@ -194,11 +201,7 @@ const nextConfig = {
         hostname: 'images.hindustantimes.com',
         pathname: '/**',
       },
-      //  {
-      //   protocol: 'https',
-      //   hostname: 'images.news18.com',
-      //   pathname: '/**',
-      // },
+    
         {
         protocol: 'https',
         hostname: 'encrypted-tbn0.gstatic.com',
@@ -219,9 +222,6 @@ const nextConfig = {
         hostname: 'encrypted-tbn1.gstatic.com',
         pathname: '/**',
       },
-    
-       
-      // encrypted-tbn0.gstatic.com   encrypted-tbn0.gstatic.com            i.pinimg.com  images.hindustantimes.com  images.news18.com filmyfocus.com images.firstpost.com
        {
         protocol: 'https',
         hostname: 'filmfare.wwmindia.com',
@@ -242,11 +242,7 @@ const nextConfig = {
         hostname: 'media.assettype.com',
         pathname: '/**',
       },
-        {
-        protocol: 'https',
-        hostname: 'dnm.nflximg.net',
-        pathname: '/**',
-      },
+      
        {
         protocol: 'https',
         hostname: 'dnm.nflximg.net',
@@ -257,7 +253,18 @@ const nextConfig = {
         hostname: 'people.com',
         pathname: '/**',
       },
-      // editorial.rottentomatoes.com
+       {
+        protocol: 'https',
+        hostname: 'central.lightcinemas.co.uk',
+        pathname: '/**',
+      },
+      //  {
+      //   protocol: 'https',
+      //   hostname: 'iol-prod.appspot.com',
+      //   pathname: '/**',
+      // },
+      
+      // 
     ],
   },
 };

@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
+@theme{
+  --breakpoint-xs:420px
+}
 
+body{
+  background-color: #000000;
+}
 /* Scrollbar width */
 ::-webkit-scrollbar {
   width: 7px; /* adjust thickness */
@@ -41,3 +47,26 @@
    font-family: "Lobster Two", sans-serif;
 }
 
+.shadowLogo{
+  text-shadow: 1px 2px rgb(226, 43, 128);
+}
+.shadowLogo2{
+  text-shadow: 1px 2px rgb(115, 3, 50);
+}
+
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.8s ease forwards;
+  }
+  .animate-fade-in-delay {
+    animation: fade-in 1s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+  }
+
+
+  

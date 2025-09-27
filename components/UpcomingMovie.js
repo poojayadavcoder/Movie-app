@@ -11,8 +11,7 @@ import { usePopup } from "@/app/context/PopupContext";
 export default function UpcomingMovie({ upcomingMovieData }) {
   const {showPopup,setShowPopup,PopId,setPopId,setPopItem}=usePopup()
   const item = upcomingMovieData.find((item) => item.id === PopId);
- console.log(upcomingMovieData)
-  console.log(item)
+ 
      useEffect(() => {
     if (PopId) {
       const item = upcomingMovieData.find((i) => i.id === PopId);
@@ -28,16 +27,16 @@ export default function UpcomingMovie({ upcomingMovieData }) {
           Upcoming Movies
         </h1>
         <div className="w-full min-h-[200px]  place-items-center mt-3 relative flex justify-center items-center px-3">
-          <div className="absolute right-[30px] -top-[40px] rounded-[10px] flex bg-gradient-to-r from-violet-400 to-pink-400 justify-center items-center cursor-pointer overflow-hidden px-2 py-[3px]">
-            <span className="text-white z-30 relative text-[12px]">
+          <div className="absolute right-[30px] -top-[45px] rounded-[10px] flex bg-gradient-to-r from-violet-400 to-pink-400 justify-center items-center cursor-pointer overflow-hidden px-2 py-[3px]">
+            <span className="text-white z-30 relative text-[12px] sm:text-[16px]">
               View All
             </span>
             <div className="w-[100%] h-[100%] bg-black rounded-[20px] absolute inset-0"></div>
           </div>
 
           <Swiper
-            spaceBetween={10}
-            slidesPerView={3}
+            spaceBetween={30}
+            slidesPerView={1}
             freeMode={{ enabled: true, momentum: true }}
             grabCursor={true}
             mousewheel={{
@@ -46,6 +45,15 @@ export default function UpcomingMovie({ upcomingMovieData }) {
             }}
             modules={[Navigation, Mousewheel]}
             simulateTouch={true}
+             breakpoints={{
+            // 480:{slidesPerview:1},
+            480: { slidesPerView: 1 },
+            520: { slidesPerView: 2 },
+            
+            768: { slidesPerView: 3 }, // Small tablets
+            // 1024: { slidesPerView: 3 }, // Tablets / small desktops
+            1100: { slidesPerView: 4 }, // Large desktops
+          }}
             className="mt-5 w-full"
           >
             {upcomingMovieData.map((item) => (
@@ -56,22 +64,25 @@ export default function UpcomingMovie({ upcomingMovieData }) {
                   setPopId(item.id);
                 }}
               >
-                <div className="w-[295px] h-[250px]">
-                  <div className="w-full h-[175px] relative overflow-hidden rounded-2xl border-[1px] border-violet-400">
+                <div className="w-[100%] lg:w-[295px] h-[250px]">
+                  <div className="w-full h-[200px] sm:h-[175px] p-[1px] rounded-2xl bg-gradient-to-tl from-violet-400 via-pink-500 to-violet-950">
+                  <div className="w-full h-full relative overflow-hidden
+                   rounded-2xl ">
                     <Image
                       src={item.bannerImage}
                       fill
                       alt={item.title || "Movie Poster"}
-                      className="object-cover"
+                      className="object-cover object-top"
                     />
                   </div>
+                  </div>
                   <div className="pl-2 pt-3">
-                    <h1 className="text-white text-[13px] font-semibold">
+                    <h1 className="text-white text-[16px] font-semibold">
                       {item.title}
                     </h1>
                     {item.genre.map((item, index) => (
                       <span
-                        className="text-white text-[11px] font-semibold mt-2"
+                        className="text-white text-[13px] mt-2"
                         key={index}
                       >
                         {item} &nbsp;{index == 0 ? "|" : ""} &nbsp;
@@ -88,6 +99,6 @@ export default function UpcomingMovie({ upcomingMovieData }) {
           </Swiper>
         </div>
       </div>
-         </>
+    </>
   );
 }
