@@ -98,7 +98,7 @@ export default function page() {
              <button className="py-[3px] text-violet-400 border-[1px] border-violet-400 rounded-[5px] w-[95%] hover:bg-violet-400 hover:text-white transition-all duration-300 ease-linear cursor-pointer">Continue</button>
            </form>
            <div className="w-[95%] border-t-[1px] pt-5 border-x-0 border-b-0 border-white flex justify-center items-center py-[8px]">
-            <h1 className="text-white text-[14px]">Already have an account? <a href="/pages/login" className="font-semibold text-violet-400 underline">Sign In</a></h1>
+            <h1 className="text-white text-[14px]">Already have an account? <Link href="/pages/login" className="font-semibold text-violet-400 underline">Sign In</Link></h1>
            </div>
          </div>
         </div>

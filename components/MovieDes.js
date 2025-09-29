@@ -241,7 +241,7 @@ export default function MovieDes({ movie, allMovies }) {
                   className="w-[95%] lg:w-[230px] h-[320px] sm:h-[300px]  overflow-hidden
                   rounded-[15px]  relative shadow-xs shadow-violet-400 mx-auto"
                 >
-                  <a href={`/pages/movies/${movie.id}`} className="relative">
+                  <Link href={`/pages/movies/${movie.id}`} className="relative">
                     <Image
                       src={movie.poster}
                       width={300}
@@ -249,7 +249,7 @@ export default function MovieDes({ movie, allMovies }) {
                       alt="movie-poster"
                       className="object-cover w-full h-full hover:scale-110 transition-transform duration-300"
                     />
-                  </a>
+                  </Link>
                   <h1 className="text-white bg-black rounded-[5px] text-[13px] px-2 py-[2px] flex justify-center items-center gap-[2px] absolute top-2 right-2">
                     {movie.rating}{" "}
                     <span>

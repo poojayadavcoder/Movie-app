@@ -44,12 +44,12 @@ export default function Slider({ initialData }) {
                     <p className="text-[1em] text-white">{slide.description}</p>
                     <div className="flex justify-center items-center gap-3 flex-row">
                       <button className="bg-black text-white text-[0.9em] border-[1px] cursor-pointer font-semibold rounded-[5px] bg-gradient-to-tl from-violet-400 via-pink-500 to-violet-950 p-[2px] w-[100px] sm:w-[150px] h-[30px] sm:h-[45px]">
-                        <a
+                        <Link
                           className="w-full h-full bg-black rounded-[5px] flex justify-center items-center"
                           href="/pages/movies"
                         >
                           Explore More
-                        </a>
+                        </Link>
                       </button>
                       <button className="bg-black text-white text-[0.9em] border-[1px] cursor-pointer font-semibold rounded-[5px] bg-gradient-to-tl from-violet-400 via-pink-500 to-violet-950 p-[2px] w-[100px] sm:w-[150px] h-[30px] sm:h-[45px]">
                         <div

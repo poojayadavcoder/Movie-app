@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -29,13 +30,13 @@ bg-no-repeat bg-cover bg-center flex justify-start items-center
           </h1>
           <div className="flex justify-start items-start mt-3 flex-col gap-2">
             <h1 className="text-white text-[13px]">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </h1>
             <h1 className="text-white text-[13px]">
-              <a href="/pages/movies">Movies</a>
+              <Link href="/pages/movies">Movies</Link>
             </h1>
             <h1 className="text-white text-[13px]">
-              <a href="/pages/watchlist">Favorites</a>
+              <Link href="/pages/watchlist">Favorites</Link>
             </h1>
           </div>
         </div>
@@ -67,30 +68,30 @@ bg-no-repeat bg-cover bg-center flex justify-start items-center
         className="flex gap-3 w-[90%] border-[1px] relative z-25 pt-10
        border-t-white border-x-0 border-b-0 justify-center items-center"
       >
-        <a
+        <Link
           href="https://www.linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full p-2 border-[1px] border-white"
         >
           <FaLinkedin className="text-white hover:text-violet-400" />
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://www.twitter.com"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full p-2 border-[1px] border-white"
         >
           <FaTwitter className="text-white hover:text-violet-400" />
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full p-2 border-[1px] border-white"
         >
           <FaInstagram className="text-white hover:text-violet-400" />
-        </a>
+        </Link>
       </div>
     </div>
   );

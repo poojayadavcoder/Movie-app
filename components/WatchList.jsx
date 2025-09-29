@@ -55,7 +55,7 @@ export default function WatchList() {
                   alt="movie-img"
                   className="object-cover object-top"
                 />
-                <a
+                <Link
                   href={`/pages/movies/${item.id}`}
                   className={`w-full h-full bg-gradient-to-b from-black/70 to-purple-900/80 
                                 absolute top-0 left-0 flex justify-center items-center
@@ -68,7 +68,7 @@ export default function WatchList() {
                             `}
                 >
                   <h1 className="text-white font-semibold">{item.title}</h1>
-                </a>
+                </Link>
               </div>
             );
           })}

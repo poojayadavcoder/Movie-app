@@ -77,7 +77,7 @@ export default function Header() {
       </ul>
       <div className="flex gap-3">
         <div>
-          <a
+          <Link
             onClick={
               token ? logout : () => (window.location.href = "/pages/login")
             }
@@ -85,7 +85,7 @@ export default function Header() {
             className="text-white text-[1.2em] font-semibold hover:text-violet-400"
           >
             {token ? "Log Out" : "Login"}
-          </a>
+          </Link>
         </div>
         <span
           className="text-white text-[28px] flex md:hidden"
