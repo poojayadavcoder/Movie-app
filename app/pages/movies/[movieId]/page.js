@@ -2,7 +2,7 @@ import MovieDes from "@/components/MovieDes";
 import { notFound } from "next/navigation";
 
 async function getMovie(movieId) {
-  const res = await fetch(`/api/movies/${movieId}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/${movieId}`, {
     cache: "no-store" 
   });
   return res.json();

@@ -32,7 +32,7 @@ export default function Movie({ movies, sliderMovies }) {
       setFavorites(favorites.filter((fav) => fav.id !== movie.id));
       showPopupMessage(`${movie.title} removed from favorites`);
 
-      await fetch("/api/favorites", {
+      await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/favorites`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +44,7 @@ export default function Movie({ movies, sliderMovies }) {
       setFavorites([...favorites, movie]);
       showPopupMessage(`${movie.title} added to favorites`);
 
-      await fetch("/api/favorites", {
+      await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/favorites`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
