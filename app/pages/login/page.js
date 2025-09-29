@@ -48,13 +48,13 @@ export default function page() {
   } else {
     toast.error(data.error || "Login failed")
   }
-   console.log(data)
+  //  console.log(data)
   }
 
  return (
     <>
     <Header/>
-    <div className="w-full min-h-[100vh] flex justify-center items-center mt-[70px]">
+    <div className="w-full min-h-[100vh] flex justify-center items-center mt-[90px] px-2 md:mt-[100px]">
        <div className="w-[350px] h-[500px] rounded-2xl p-[2px] bg-gradient-to-tl from-violet-400 via-pink-500 to-violet-900 flex justify-center items-center">
          <div className="w-full h-full bg-black rounded-2xl 
          flex justify-center items-center flex-col gap-5 px-[20px]">

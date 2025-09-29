@@ -29,7 +29,7 @@ export default function UpcomingMovie({ upcomingMovieData }) {
         <div className="w-full min-h-[200px]  place-items-center mt-3 relative flex justify-center items-center px-3">
           <div className="absolute right-[30px] -top-[45px] rounded-[10px] flex bg-gradient-to-r from-violet-400 to-pink-400 justify-center items-center cursor-pointer overflow-hidden px-2 py-[3px]">
             <span className="text-white z-30 relative text-[12px] sm:text-[16px]">
-              View All
+              <a href="/pages/movies">View All</a>
             </span>
             <div className="w-[100%] h-[100%] bg-black rounded-[20px] absolute inset-0"></div>
           </div>
@@ -46,13 +46,10 @@ export default function UpcomingMovie({ upcomingMovieData }) {
             modules={[Navigation, Mousewheel]}
             simulateTouch={true}
              breakpoints={{
-            // 480:{slidesPerview:1},
             480: { slidesPerView: 1 },
             520: { slidesPerView: 2 },
-            
-            768: { slidesPerView: 3 }, // Small tablets
-            // 1024: { slidesPerView: 3 }, // Tablets / small desktops
-            1100: { slidesPerView: 4 }, // Large desktops
+            768: { slidesPerView: 3 },
+            1100: { slidesPerView: 4 }, 
           }}
             className="mt-5 w-full"
           >

@@ -29,10 +29,10 @@ export default function page() {
    e.preventDefault()
    const errors = formValidation({ name, email, password })
     if (Object.keys(errors).length > 0) {
-      console.log("Validation errors:", errors)
+      // console.log("Validation errors:", errors)
       return
     }
-   console.log("Form submitted:", { name, email, password })
+  //  console.log("Form submitted:", { name, email, password })
     const res=await fetch('/api/register',{
     method:"POST",
     body:JSON.stringify({name,password,email})
@@ -46,7 +46,6 @@ export default function page() {
   } else {
     toast.error("Something went wrong")
   }
-   console.log(data)
   }
   return (
     <>

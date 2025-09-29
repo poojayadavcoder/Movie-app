@@ -11,85 +11,49 @@ import Link from "next/link";
 import { FaApple, FaHeart } from "react-icons/fa";
 import { FaGooglePlay } from "react-icons/fa";
 import { usePopup } from "@/app/context/PopupContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-export default function Movie({ movies,sliderMovies}) {
-  const { favorites, setFavorites,movieSlider } = usePopup();
+export default function Movie({ movies, sliderMovies }) {
+  const { favorites, setFavorites, movieSlider } = usePopup();
   const [popupMessage, setPopupMessage] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-   console.log(token)
+  const token =
+    typeof window !== "undefined" ? localStorage.getItem("token") : null;
 
-//   const toggleFav = async (movie) => {
-//      if (!token) {
-//     showPopupMessage("Please login to add favorites!");
-//     return;
-//   } 
-//     console.log(favorites)
-//   const isFavorite =favorites.some((fav) => fav.id === movie.id);
+  const toggleFav = async (movie) => {
+    if (!token) {
+      showPopupMessage("Please login to add favorites!");
+      return;
+    }
 
-//   if (isFavorite) {
-//     setFavorites(favorites.filter((fav) => fav.id !== movie.id));
-//     showPopupMessage(`${movie.title} removed from favorites`);
+    const isFavorite = favorites.some((fav) => fav.id === movie.id);
 
-//     await fetch("/api/favorites", {
-//       method: "DELETE",
-//        headers: {
-//     "Content-Type": "application/json",
-//     "Authorization": `Bearer ${token}`, // ✅ Correct placement
-//   },
-//       body: JSON.stringify({ movieId: movie.id }),
-//     });
-//   } else {
-//     setFavorites([...favorites, movie]);
-//     showPopupMessage(`${movie.title} added to favorites`);
+    if (isFavorite) {
+      setFavorites(favorites.filter((fav) => fav.id !== movie.id));
+      showPopupMessage(`${movie.title} removed from favorites`);
 
-//     await fetch("/api/favorites", {
-//       method: "POST",
-//        headers: {
-//     "Content-Type": "application/json",
-//     "Authorization": `Bearer ${token}`, // ✅ Add token for POST
-//   },
-//       body: JSON.stringify({ movie }),
-//     });
-//   }
-// };
+      await fetch("/api/favorites", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ movieId: movie.id }),
+      });
+    } else {
+      setFavorites([...favorites, movie]);
+      showPopupMessage(`${movie.title} added to favorites`);
 
-
-const toggleFav = async (movie) => {
-  if (!token) {
-    showPopupMessage("Please login to add favorites!");
-    return;
-  }
-
-  const isFavorite = favorites.some((fav) => fav.id === movie.id);
-
-  if (isFavorite) {
-    setFavorites(favorites.filter((fav) => fav.id !== movie.id));
-    showPopupMessage(`${movie.title} removed from favorites`);
-
-    await fetch("/api/favorites", {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${token}`,
-      },
-      body: JSON.stringify({ movieId: movie.id }),
-    });
-  } else {
-    setFavorites([...favorites, movie]);
-    showPopupMessage(`${movie.title} added to favorites`);
-
-    await fetch("/api/favorites", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${token}`,
-      },
-      body: JSON.stringify({ movie }),
-    });
-  }
-};
+      await fetch("/api/favorites", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ movie }),
+      });
+    }
+  };
 
   const showPopupMessage = (message) => {
     setPopupMessage(message);
