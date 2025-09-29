@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import YoutubeBox from "./YoutubeBox";
 import { usePopup } from "@/app/context/PopupContext";
+import Link from "next/link";
 
 export default function Slider({ initialData }) {
   const { handleWatchNow, showPlayer } = usePopup();

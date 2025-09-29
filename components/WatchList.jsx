@@ -3,6 +3,7 @@ import Image from "next/image";
 import bannerImg from "../public/movieFavImg.jpg";
 import { useState } from "react";
 import { usePopup } from "@/app/context/PopupContext";
+import Link from "next/link";
 
 export default function WatchList() {
   const { favorites } = usePopup();

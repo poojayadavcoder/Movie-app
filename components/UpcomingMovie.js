@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Mousewheel } from "swiper/modules";
 import { usePopup } from "@/app/context/PopupContext";
+import Link from "next/link";
 
 export default function UpcomingMovie({ upcomingMovieData }) {
   const {showPopup,setShowPopup,PopId,setPopId,setPopItem}=usePopup()

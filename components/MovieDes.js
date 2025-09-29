@@ -12,6 +12,7 @@ import { MdOutlineAccessTime } from "react-icons/md"; // Duration
 import { BsCalendarDate } from "react-icons/bs"; // Year
 import { usePopup } from "@/app/context/PopupContext";
 import YoutubeBox from "./YoutubeBox";
+import Link from "next/link";
 
 export default function MovieDes({ movie, allMovies }) {
   const { handleWatchNow, showPlayer } = usePopup();

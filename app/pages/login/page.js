@@ -5,7 +5,7 @@ import Header from "@/components/Header"
 import InputBox from "@/components/InputBox"
 import { useEffect, useState } from "react"
 import toast from "react-hot-toast"
-
+import Link from "next/link";
 export default function page() {
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
