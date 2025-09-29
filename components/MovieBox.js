@@ -1,9 +1,9 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import {useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { FaStar, FaPlay, FaTimes } from "react-icons/fa";
+import { FaStar, FaPlay} from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { usePopup } from "@/app/context/PopupContext";

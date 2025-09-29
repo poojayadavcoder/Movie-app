@@ -3,10 +3,10 @@
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import InputBox from "@/components/InputBox"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import toast from "react-hot-toast"
 import Link from "next/link";
-export default function page() {
+export default function Page() {
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
   const [formError,setFormError]=useState({})
