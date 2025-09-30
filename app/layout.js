@@ -1,4 +1,3 @@
-import ServerDataProvider from "@/components/ServerDataProvider";
 import { PopupProvider } from "./context/PopupContext";
 import "./globals.css";
 import { Poppins, Lobster_Two } from "next/font/google";
@@ -19,15 +18,8 @@ export const metadata = {
   description: "Movie Go Project",
 };
 
-export async function getMoviesSlider() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/movieSlider`, {
-    cache: "force-cache",
-  });
-  return res.json();
-}
 
 export default async function RootLayout({ children }) {
-   const movieSlider =await getMoviesSlider()
   return (
     <html lang="en">
       <body className={montserrat.className}>
@@ -35,9 +27,6 @@ export default async function RootLayout({ children }) {
           {children}
           <Toaster position="top-right" reverseOrder={false} />
         </PopupProvider>
-         {/* <ServerDataProvider>
-          {children}
-        </ServerDataProvider> */}
       </body>
     </html>
   );
