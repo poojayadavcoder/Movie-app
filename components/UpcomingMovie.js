@@ -22,7 +22,7 @@ export default function UpcomingMovie({ upcomingMovieData }) {
   
   return (
     <>
-      <div className={`w-full min-h-[250px] bg-black pt-3 
+      <div className={`w-full min-h-[250px] pt-3 
         ${showPopup?"blur-sm pointer-events-none":""}`}>
         <h1 className="text-[18px] font-semibold text-violet-400 px-3 ">
           Upcoming Movies
@@ -62,7 +62,7 @@ export default function UpcomingMovie({ upcomingMovieData }) {
                   setPopId(item.id);
                 }}
               >
-                <div className="w-[100%] lg:w-[295px] h-[250px]">
+                <div className="w-[100%] lg:w-[295px] h-[300px] sm:h-[280px] lg:h-[250px]">
                   <div className="w-full h-[200px] sm:h-[175px] p-[1px] rounded-2xl bg-gradient-to-tl from-violet-400 via-pink-500 to-violet-950">
                   <div className="w-full h-full relative overflow-hidden
                    rounded-2xl ">
@@ -78,18 +78,22 @@ export default function UpcomingMovie({ upcomingMovieData }) {
                     <h1 className="text-white text-[16px] font-semibold">
                       {item.title}
                     </h1>
+                    <div className="w-full flex justify-start mt-2 items-start lg:items-center flex-col lg:flex-row
+                     gap-[3px]">
+                      <div>
                     {item.genre.map((item, index) => (
-                      <span
-                        className="text-white text-[13px] mt-2"
-                        key={index}
-                      >
+                      <span key={index}
+                        className="text-white text-[13px] "
+                       >
                         {item} &nbsp;{index == 0 ? "|" : ""} &nbsp;
                       </span>
-                    ))}
+                     ))}
+                     </div>
                     <span className="text-[12px] text-violet-400">
                       <span className="text-white">(</span>&nbsp;{item.director}
                       &nbsp;<span className="text-white">)</span>
                     </span>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

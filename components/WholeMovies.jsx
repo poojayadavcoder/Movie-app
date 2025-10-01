@@ -69,7 +69,7 @@ export default function Movie({ movies, sliderMovies }) {
        flex justify-center items-center"
         >
           <div
-            className="w-[95%] h-[250px] rounded-2xl bg-black
+            className="w-[95%] h-[250px] sm:h-[300px] lg:h-[370px] rounded-2xl bg-black
         my-[20px] relative overflow-hidden flex justify-endtify-start items-center"
           >
             <Swiper
@@ -84,13 +84,10 @@ export default function Movie({ movies, sliderMovies }) {
                     <SwiperSlide
                       className="relative"
                       key={item.id}
-                      style={{
-                        backgroundImage: `url(${item.image})`,
-                        backgroundPosition: "top",
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                      }}
-                    >
+                      >
+                      <Image src={item.image} fill
+                      alt="movie-img"
+                      className="object-cover object-top"/>
                       <div
                         className="w-full h-full absolute top-0 left-0
                z-10 bg-gradient-to-r from-black/40
@@ -100,10 +97,10 @@ export default function Movie({ movies, sliderMovies }) {
                         className="w-[70%] sm:w-[400px] h-full flex justify-center items-center 
                 gap-[10px] flex-col relative z-30"
                       >
-                        <h1 className="text-[18px] text-white font-semibold text-center">
+                        <h1 className="text-[18px] text-white shadowText font-semibold text-center">
                           {item.title}
                         </h1>
-                        <p className="text-center text-[14px] text-white text-center">
+                        <p className="text-center text-[14px] text-white shadowText">
                           {item.description}
                         </p>
                       </div>
@@ -155,11 +152,11 @@ export default function Movie({ movies, sliderMovies }) {
                       }}
                       disabled={!token}
                       className={`${
-                        isFavorite ? "text-pink-600" : "text-white"
+                        isFavorite ? "text-pink-600 " : "text-pink-200"
                       } ${!token ? "opacity-50 cursor-not-allowed" : ""} 
   cursor-pointer absolute right-[6px] top-[4px] text-[25px] z-30`}
                     >
-                      <FaHeart />
+                      <FaHeart  />
                     </button>
                   </div>
                 </Link>

@@ -4,7 +4,7 @@ import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <div
-      className="w-full h-auto relative
+      className="w-full h-auto relative px-2
 bg-no-repeat bg-cover bg-center flex justify-start items-center
  gap-6 flex-col py-[20px] mt-2 md:mt-5"
     >
